@@ -1,0 +1,32 @@
+#!/bin/bash
+
+path_test=/Users/ggordon_apple/project/shared-reference/shareRef/test/unit/shareref
+
+array=(
+Interview
+InterviewMethod
+InterviewType
+Employer
+EmployerLocation
+EmployeeLocation
+Employee
+EmployeeHistory
+State
+Location
+ProspectEmployer
+ShareReference
+InterviewState
+EmployeeReference
+// member will be build using spring security plugin
+// Member
+)
+
+suffix=Spec.groovy
+for domain in ${array[*]} 
+do
+   if [ ! -f "$path_test/$domain$suffix" ]; then
+         grails create-domain-class $domain
+         grails create-controller $domain
+   fi 
+done
+
