@@ -1,6 +1,4 @@
-package SecUser
-
-class SecRole {
+class SecUser {
 
 	transient springSecurityService
 
@@ -22,8 +20,8 @@ class SecRole {
 		password column: '`password`'
 	}
 
-	Set<Reqeustmap> getAuthorities() {
-		SecRoleReqeustmap.findAllBySecRole(this).collect { it.reqeustmap }
+	Set<SecRole> getAuthorities() {
+		SecUserSecRole.findAllBySecUser(this).collect { it.secRole }
 	}
 
 	def beforeInsert() {

@@ -1,6 +1,4 @@
-package SecUser
-
-class Reqeustmap {
+class SecRole {
 
 	String authority
 

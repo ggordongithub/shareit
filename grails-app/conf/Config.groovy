@@ -127,12 +127,11 @@ log4j.main = {
 }
 
 
-
 // Added by the Spring Security Core plugin:
-grails.plugin.springsecurity.userLookup.userDomainClassName = 'shareRef.SecUser'
-grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'shareRef.SecUserSecRole'
-grails.plugin.springsecurity.authority.className = 'shareRef.SecRole'
-grails.plugin.springsecurity.requestMap.className = 'shareRef.Requestmap'
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'SecUser'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'SecUserSecRole'
+grails.plugin.springsecurity.authority.className = 'SecRole'
+grails.plugin.springsecurity.requestMap.className = 'Requestmap'
 grails.plugin.springsecurity.securityConfigType = 'Requestmap'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/':                              ['permitAll'],
@@ -145,6 +144,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 ]
 
 
+//grails.plugin.springsecurity.securityConfigType = SecurityConfigType.Reqeustmap
 
 // Added by the Spring Security Core plugin:
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'SecUser.SecRole'

@@ -1,0 +1,5 @@
+class State {
+
+    static constraints = {
+    }
+}
