@@ -17,8 +17,6 @@ ProspectEmployer
 ShareReference
 InterviewState
 EmployeeReference
-// member will be build using spring security plugin
-// Member
 )
 
 suffix=Spec.groovy
