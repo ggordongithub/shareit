@@ -1,0 +1,5 @@
+class MemberController {
+
+//    def index() { }
+def scaffold = true
+}
