@@ -1,5 +1,10 @@
+import grails.plugin.springsecurity.annotation.Secured;
+
 class EmployeeController {
 
-//    def index() { }
-      def scaffold = true
+	@Secured(['ROLE_ADMIN'])
+    def index() { 
+		render "Some things are just private"
+	}
+//  def scaffold = true
 }

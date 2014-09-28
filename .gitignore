@@ -1,1 +1,7 @@
-target/*
+target/**
+.idea
+.grails
+*.iml
+.gradle
+.settings
+

@@ -128,20 +128,23 @@ log4j.main = {
 
 
 // Added by the Spring Security Core plugin:
-grails.plugin.springsecurity.userLookup.userDomainClassName = 'SecUser'
-grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'SecUserSecRole'
-grails.plugin.springsecurity.authority.className = 'SecRole'
-grails.plugin.springsecurity.requestMap.className = 'Requestmap'
-grails.plugin.springsecurity.securityConfigType = 'Requestmap'
-grails.plugin.springsecurity.controllerAnnotations.staticRules = [
-	'/':                              ['permitAll'],
-	'/index':                         ['permitAll'],
-	'/index.gsp':                     ['permitAll'],
-	'/**/js/**':                      ['permitAll'],
-	'/**/css/**':                     ['permitAll'],
-	'/**/images/**':                  ['permitAll'],
-	'/**/favicon.ico':                ['permitAll']
-]
+//grails.plugin.springsecurity.userLookup.userDomainClassName = 'SecUser'
+//grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'SecUserSecRole'
+//grails.plugin.springsecurity.authority.className = 'SecRole'
+//grails.plugin.springsecurity.requestMap.className = 'Requestmap'
+//grails.plugin.springsecurity.securityConfigType = 'Requestmap'
+//grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+//	'/':                              ['permitAll'],
+	//'/EmployeeController':            ['permitAll'],
+	//'/index':                         ['permitAll'],
+	//'/index.gsp':                     ['permitAll'],
+	//'/**/js/**':                      ['permitAll'],
+	//'/**/css/**':                     ['permitAll'],
+	//'/**/images/**':                  ['permitAll'],
+	//'/**/favicon.ico':                ['permitAll'],
+	//'/login/**':                      ['permitAll'],
+	//'/logout/**':                     ['permitAll']
+//]
 
 
 //grails.plugin.springsecurity.securityConfigType = SecurityConfigType.Reqeustmap
@@ -152,12 +155,13 @@ grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'SecUser.SecRol
 grails.plugin.springsecurity.authority.className = 'SecUser.Reqeustmap'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/':                              ['permitAll'],
-	'/index':                         ['permitAll'],
-	'/index.gsp':                     ['permitAll'],
-	'/assets/**':                     ['permitAll'],
-	'/**/js/**':                      ['permitAll'],
-	'/**/css/**':                     ['permitAll'],
-	'/**/images/**':                  ['permitAll'],
-	'/**/favicon.ico':                ['permitAll']
+//	'/index':                         ['permitAll'],
+//	'/index.gsp':                     ['permitAll'],
+//	'/assets/**':                     ['permitAll'],
+//	'/**/js/**':                      ['permitAll'],
+	//'/**/css/**':                     ['permitAll'],
+//	'/**/images/**':                  ['permitAll'],
+//	'/**/favicon.ico':                ['permitAll'],
+//	'/login/**':                      ['permitAll'],
+//	'/logout/**':                     ['permitAll']
 ]
-
