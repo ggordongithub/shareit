@@ -155,13 +155,12 @@ grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'SecUser.SecRol
 grails.plugin.springsecurity.authority.className = 'SecUser.Reqeustmap'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/':                              ['permitAll'],
-//	'/index':                         ['permitAll'],
-//	'/index.gsp':                     ['permitAll'],
-//	'/assets/**':                     ['permitAll'],
-//	'/**/js/**':                      ['permitAll'],
-	//'/**/css/**':                     ['permitAll'],
-//	'/**/images/**':                  ['permitAll'],
-//	'/**/favicon.ico':                ['permitAll'],
-//	'/login/**':                      ['permitAll'],
-//	'/logout/**':                     ['permitAll']
+	'/index':                         ['permitAll'],
+	'/index.gsp':                     ['permitAll'],
+	'/assets/**':                     ['permitAll'],
+	'/**/js/**':                      ['permitAll'],
+	'/**/css/**':                     ['permitAll'],
+	'/**/images/**':                  ['permitAll'],
+	'/employeeController':            ['permitAll'],
+	'/**/favicon.ico':                ['permitAll']
 ]
