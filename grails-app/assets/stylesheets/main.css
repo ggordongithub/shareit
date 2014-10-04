@@ -594,3 +594,106 @@ a.skip {
 	position: absolute;
 	left: -9999px;
 }
+
+
+/* Shared Reference Customization */ 
+#header { 
+background: #cedce7; /* Old browsers */
+background: #cedce7; /* Old browsers */
+background: -moz-linear-gradient(top,  #cedce7 0%, #596a72 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cedce7), color-stop(100%,#596a72)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #cedce7 0%,#596a72 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #cedce7 0%,#596a72 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #cedce7 0%,#596a72 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #cedce7 0%,#596a72 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
+padding: 2em 1em 2em 1em; 
+margin-bottom: 1em; 
+} 
+
+.header-main { 
+  font-size: 90px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Tangerine', cursive;
+  background: -webkit-linear-gradient(#eee, black);
+  -webkit-background-clip: text;
+#  -webkit-text-fill-color: transparent;
+} 
+
+.header-sub { 
+ color: #fff; 
+ font-size: 1.25em; 
+ font-style: italic; 
+} 
+
+/* Carosel css */
+#carousel {
+	width:550px;
+	height:550px;	
+	margin:0 auto;
+}
+
+#slides {
+	overflow:hidden;
+	/* fix ie overflow issue */
+	position:relative;
+	width:500px;
+	height:500px;
+	border:1px solid #ccc;
+}
+
+/* remove the list styles, width : item width * total items */	
+#slides ul {
+	position:relative;
+	left:0;
+	top:0;
+	list-style:none;
+	margin:0;
+	padding:0;	
+	width:750px;			
+}
+
+/* width of the item, in this case I put 250x250x gif */
+#slides li {
+	width:350px;
+	height:350px;	
+	float:left;
+}
+
+#slides li img {
+	padding:5px;
+}
+
+/* Styling for prev and next buttons */
+#buttons {
+	padding:0 0 5px 0;	
+	float:right;
+}
+
+#buttons a {
+	display:block; 
+	width:31px; 
+	height:32px;
+	text-indent:-999em;
+	float:left;
+	outline:0;
+}
+
+a#prev {
+	background:url(arrow.gif) 0 -31px no-repeat; 
+}
+
+a#prev:hover {
+	background:url(arrow.gif) 0 0 no-repeat;
+}
+
+a#next {
+	background:url(arrow.gif) -32px -31px no-repeat; 
+}
+
+a#next:hover {
+	background:url(arrow.gif) -32px 0 no-repeat;
+}
+
+.clear {clear:both}

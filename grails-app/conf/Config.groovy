@@ -116,7 +116,7 @@ log4j.main = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 
-    debug 'grails.app'
+   // trace 'org.codehaus.groovy.grails.plugins.springsecurity' , 'org.springframework.security'
 
     root {
         trace 'stdout'
@@ -146,21 +146,26 @@ log4j.main = {
 	//'/logout/**':                     ['permitAll']
 //]
 
-
-//grails.plugin.springsecurity.securityConfigType = SecurityConfigType.Reqeustmap
+/* debug security 
+grails.plugin.springsecurity.useSecurityEventListener = true
+grails.plugin.springsecurity.onAbstractAuthenticationFailureEvent = { e, appCtx ->
+   println "\nERROR auth failed for user $e.authentication.name: $e.exception.message\n"
+}
+*/
 
 // Added by the Spring Security Core plugin:
-grails.plugin.springsecurity.userLookup.userDomainClassName = 'SecUser.SecRole'
-grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'SecUser.SecRoleReqeustmap'
-grails.plugin.springsecurity.authority.className = 'SecUser.Reqeustmap'
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'SecUser'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'SecUserSecRole'
+grails.plugin.springsecurity.authority.className = 'SecRole'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
-	'/':                              ['permitAll'],
-	'/index':                         ['permitAll'],
-	'/index.gsp':                     ['permitAll'],
+	'/':                              ['IS_AUTHENTICATED_FULLY'],
+	'/index':                         ['IS_AUTHENTICATED_FULLY'],
+	'/index.gsp':                     ['IS_AUTHENTICATED_FULLY'],
 	'/assets/**':                     ['permitAll'],
 	'/**/js/**':                      ['permitAll'],
 	'/**/css/**':                     ['permitAll'],
 	'/**/images/**':                  ['permitAll'],
-	'/employeeController':            ['permitAll'],
-	'/**/favicon.ico':                ['permitAll']
+	'/employee/**':                   ['permitAll'],
+	'/**/favicon.ico':                ['permitAll'],
+	'/dbconsole/**':                  ['IS_AUTHENTICATED_FULLY']
 ]
