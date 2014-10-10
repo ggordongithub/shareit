@@ -117,6 +117,7 @@ log4j.main = {
            'net.sf.ehcache.hibernate'
 
    // trace 'org.codehaus.groovy.grails.plugins.springsecurity' , 'org.springframework.security'
+   // trace 'org.codehaus.groovy.grails.web.pages',          // GSP
 
     root {
         trace 'stdout'
@@ -165,7 +166,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/js/**':                      ['permitAll'],
 	'/**/css/**':                     ['permitAll'],
 	'/**/images/**':                  ['permitAll'],
-	'/employee/**':                   ['permitAll'],
+	'/employ*/**':                    ['permitAll'],
 	'/**/favicon.ico':                ['permitAll'],
 	'/dbconsole/**':                  ['IS_AUTHENTICATED_FULLY']
 ]

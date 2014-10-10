@@ -1,7 +1,7 @@
 /* FONT STACK */
-body,
-input, select, textarea {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+body, input, select, textarea {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+		"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9,19 +9,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* BASE LAYOUT */
-
 html {
 	background-color: #ddd;
 	background-image: -moz-linear-gradient(center top, #aaa, #ddd);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #ddd));
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa),
+		color-stop(1, #ddd));
 	background-image: linear-gradient(top, #aaa, #ddd);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#aaaaaa', EndColorStr = '#dddddd');
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr= '#aaaaaa',
+		EndColorStr= '#dddddd');
 	background-repeat: no-repeat;
 	height: 100%;
 	/* change the box model to exclude the padding from the calculation of 100% height (IE8+) */
 	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html.no-cssgradients {
@@ -41,10 +42,11 @@ body {
 	color: #333333;
 	margin: 0 auto;
 	max-width: 960px;
-	overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
-	   -moz-box-shadow: 0 0 0.3em #255b17;
+	overflow-x: hidden;
+	/* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
+	-moz-box-shadow: 0 0 0.3em #255b17;
 	-webkit-box-shadow: 0 0 0.3em #255b17;
-	        box-shadow: 0 0 0.3em #255b17;
+	box-shadow: 0 0 0.3em #255b17;
 }
 
 #grailsLogo {
@@ -52,9 +54,7 @@ body {
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */
-.ie6 body,
-.ie7 body,
-.ie8 body {
+.ie6 body, .ie7 body, .ie8 body {
 	border-color: #255b17;
 	border-style: solid;
 	border-width: 0 1px;
@@ -69,7 +69,8 @@ a:link, a:visited, a:hover {
 }
 
 a:hover, a:active {
-	outline: none; /* prevents outline in webkit on active links but retains it for tab focus */
+	outline: none;
+	/* prevents outline in webkit on active links but retains it for tab focus */
 }
 
 h1 {
@@ -88,13 +89,13 @@ img {
 }
 
 /* GENERAL */
-
 #grailsLogo a {
 	display: inline-block;
 	margin: 1em;
 }
 
 .content {
+	
 }
 
 .content h1 {
@@ -107,14 +108,35 @@ img {
 	border: none;
 }
 
+#footer {
+	background: #cedce7; /* Old browsers */
+	background: #cedce7; /* Old browsers */
+	background: -moz-linear-gradient(top, #cedce7 0%, #596a72 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cedce7),
+		color-stop(100%, #596a72)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #cedce7 0%, #596a72 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #cedce7 0%, #596a72 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #cedce7 0%, #596a72 100%);
+	/* IE10+ */
+	background: linear-gradient(to bottom, #cedce7 0%, #596a72 100%);
+	/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7',
+		endColorstr='#596a72', GradientType=0); /* IE6-9 */
+	padding: 2em 1em 2em 1em;
+}
+
 .footer {
-	background: #abbf78;
-	color: #000;
+	color: black;
+	font-style: bold;
 	clear: both;
-	font-size: 0.8em;
+	font-size: 1em;
 	margin-top: 1.5em;
 	padding: 1em;
 	min-height: 1em;
+	clear: both;
 }
 
 .footer a {
@@ -125,21 +147,20 @@ img {
 	background: url(../images/spinner.gif) 50% 50% no-repeat transparent;
 	height: 16px;
 	width: 16px;
-    padding: 0.5em;
-    position: absolute;
-    right: 0;
+	padding: 0.5em;
+	position: absolute;
+	right: 0;
 	top: 0;
 	text-indent: -9999px;
 }
 
 /* NAVIGATION MENU */
-
 .nav {
 	background-color: #efefef;
 	padding: 0.5em 0.75em;
-	   -moz-box-shadow: 0 0 3px 1px #aaaaaa;
+	-moz-box-shadow: 0 0 3px 1px #aaaaaa;
 	-webkit-box-shadow: 0 0 3px 1px #aaaaaa;
-	        box-shadow: 0 0 3px 1px #aaaaaa;
+	box-shadow: 0 0 3px 1px #aaaaaa;
 	zoom: 1;
 }
 
@@ -162,9 +183,9 @@ img {
 	display: block;
 	padding: 0.25em 0.7em;
 	text-decoration: none;
-	   -moz-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
 	-webkit-border-radius: 0.3em;
-	        border-radius: 0.3em;
+	border-radius: 0.3em;
 }
 
 .nav a:active, .nav a:visited {
@@ -203,9 +224,7 @@ img {
 }
 
 /* CREATE/EDIT FORMS AND SHOW PAGES */
-
-fieldset,
-.property-list {
+fieldset, .property-list {
 	margin: 0.6em 1.25em 0 1.25em;
 	padding: 0.3em 1.8em 1.25em;
 	position: relative;
@@ -223,8 +242,7 @@ fieldset,
 	margin-top: 1em;
 }
 
-.fieldcontain label,
-.fieldcontain .property-label {
+.fieldcontain label, .fieldcontain .property-label {
 	color: #666666;
 	text-align: right;
 	width: 25%;
@@ -277,9 +295,9 @@ input:focus, select:focus, textarea:focus {
 	background-color: #ffffff;
 	border: 1px solid #eeeeee;
 	outline: 0;
-	   -moz-box-shadow: 0 0 0.5em #ffffff;
+	-moz-box-shadow: 0 0 0.5em #ffffff;
 	-webkit-box-shadow: 0 0 0.5em #ffffff;
-	        box-shadow: 0 0 0.5em #ffffff;
+	box-shadow: 0 0 0.5em #ffffff;
 }
 
 .required-indicator {
@@ -307,7 +325,6 @@ ul.one-to-many li.add {
 }
 
 /* EMBEDDED PROPERTIES */
-
 fieldset.embedded {
 	background-color: transparent;
 	border: 1px solid #CCCCCC;
@@ -315,9 +332,9 @@ fieldset.embedded {
 	margin-right: 0;
 	padding-left: 0;
 	padding-right: 0;
-	   -moz-box-shadow: none;
+	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
-	        box-shadow: none;
+	box-shadow: none;
 }
 
 fieldset.embedded legend {
@@ -325,51 +342,50 @@ fieldset.embedded legend {
 }
 
 /* MESSAGES AND ERRORS */
-
-.errors,
-.message {
+.errors, .message {
 	font-size: 0.8em;
 	line-height: 2;
 	margin: 1em 2em;
 	padding: 0.25em;
+	width: 300px;
 }
 
 .message {
 	background: #f3f3ff;
 	border: 1px solid #b2d1ff;
 	color: #006dba;
-	   -moz-box-shadow: 0 0 0.25em #b2d1ff;
+	-moz-box-shadow: 0 0 0.25em #b2d1ff;
 	-webkit-box-shadow: 0 0 0.25em #b2d1ff;
-	        box-shadow: 0 0 0.25em #b2d1ff;
+	box-shadow: 0 0 0.25em #b2d1ff;
 }
 
 .errors {
 	background: #fff3f3;
 	border: 1px solid #ffaaaa;
 	color: #cc0000;
-	   -moz-box-shadow: 0 0 0.25em #ff8888;
+	-moz-box-shadow: 0 0 0.25em #ff8888;
 	-webkit-box-shadow: 0 0 0.25em #ff8888;
-	        box-shadow: 0 0 0.25em #ff8888;
+	box-shadow: 0 0 0.25em #ff8888;
 }
 
-.errors ul,
-.message {
+.errors ul, .message {
 	padding: 0;
 }
 
 .errors li {
 	list-style: none;
-	background: transparent url(../images/skin/exclamation.png) 0.5em 50% no-repeat;
+	background: transparent url(../images/skin/exclamation.png) 0.5em 50%
+		no-repeat;
 	text-indent: 2.2em;
 }
 
 .message {
-	background: transparent url(../images/skin/information.png) 0.5em 50% no-repeat;
+	background: transparent url(../images/skin/information.png) 0.5em 50%
+		no-repeat;
 	text-indent: 2.2em;
 }
 
 /* form fields with errors */
-
 .error input, .error select, .error textarea {
 	background: #fff3f3;
 	border-color: #ffaaaa;
@@ -377,13 +393,12 @@ fieldset.embedded legend {
 }
 
 .error input:focus, .error select:focus, .error textarea:focus {
-	   -moz-box-shadow: 0 0 0.5em #ffaaaa;
+	-moz-box-shadow: 0 0 0.5em #ffaaaa;
 	-webkit-box-shadow: 0 0 0.5em #ffaaaa;
-	        box-shadow: 0 0 0.5em #ffaaaa;
+	box-shadow: 0 0 0.5em #ffaaaa;
 }
 
 /* same effects for browsers that support HTML5 client-side validation (these have to be specified separately or IE will ignore the entire rule) */
-
 input:invalid, select:invalid, textarea:invalid {
 	background: #fff3f3;
 	border-color: #ffaaaa;
@@ -391,13 +406,12 @@ input:invalid, select:invalid, textarea:invalid {
 }
 
 input:invalid:focus, select:invalid:focus, textarea:invalid:focus {
-	   -moz-box-shadow: 0 0 0.5em #ffaaaa;
+	-moz-box-shadow: 0 0 0.5em #ffaaaa;
 	-webkit-box-shadow: 0 0 0.5em #ffaaaa;
-	        box-shadow: 0 0 0.5em #ffaaaa;
+	box-shadow: 0 0 0.5em #ffaaaa;
 }
 
 /* TABLES */
-
 table {
 	border-top: 1px solid #DFDFDF;
 	border-collapse: collapse;
@@ -427,9 +441,12 @@ td, th {
 th {
 	background-color: #efefef;
 	background-image: -moz-linear-gradient(top, #ffffff, #eaeaea);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #eaeaea));
-	    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#ffffff', EndColorStr = '#eaeaea');
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#eaeaea')";
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff),
+		color-stop(1, #eaeaea));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr= '#ffffff',
+		EndColorStr= '#eaeaea');
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#eaeaea')";
 	color: #666666;
 	font-weight: bold;
 	line-height: 1.7em;
@@ -480,32 +497,29 @@ th:hover, tr:hover {
 }
 
 /* PAGINATION */
-
 .pagination {
 	border-top: 0;
 	margin: 0;
 	padding: 0.3em 0.2em;
 	text-align: center;
-	   -moz-box-shadow: 0 0 3px 1px #AAAAAA;
+	-moz-box-shadow: 0 0 3px 1px #AAAAAA;
 	-webkit-box-shadow: 0 0 3px 1px #AAAAAA;
-	        box-shadow: 0 0 3px 1px #AAAAAA;
+	box-shadow: 0 0 3px 1px #AAAAAA;
 	background-color: #EFEFEF;
 }
 
-.pagination a,
-.pagination .currentStep {
+.pagination a, .pagination .currentStep {
 	color: #666666;
 	display: inline-block;
 	margin: 0 0.1em;
 	padding: 0.25em 0.7em;
 	text-decoration: none;
-	   -moz-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
 	-webkit-border-radius: 0.3em;
-	        border-radius: 0.3em;
+	border-radius: 0.3em;
 }
 
-.pagination a:hover, .pagination a:focus,
-.pagination .currentStep {
+.pagination a:hover, .pagination a:focus, .pagination .currentStep {
 	background-color: #999999;
 	color: #ffffff;
 	outline: none;
@@ -513,27 +527,25 @@ th:hover, tr:hover {
 }
 
 .no-borderradius .pagination a:hover, .no-borderradius .pagination a:focus,
-.no-borderradius .pagination .currentStep {
+	.no-borderradius .pagination .currentStep {
 	background-color: transparent;
 	color: #444444;
 	text-decoration: underline;
 }
 
 /* ACTION BUTTONS */
-
 .buttons {
 	background-color: #efefef;
 	overflow: hidden;
 	padding: 0.3em;
-	   -moz-box-shadow: 0 0 3px 1px #aaaaaa;
+	-moz-box-shadow: 0 0 3px 1px #aaaaaa;
 	-webkit-box-shadow: 0 0 3px 1px #aaaaaa;
-	        box-shadow: 0 0 3px 1px #aaaaaa;
+	box-shadow: 0 0 3px 1px #aaaaaa;
 	margin: 0.1em 0 0 0;
 	border: none;
 }
 
-.buttons input,
-.buttons a {
+.buttons input, .buttons a {
 	background-color: transparent;
 	border: 0;
 	color: #666666;
@@ -543,25 +555,24 @@ th:hover, tr:hover {
 	overflow: visible;
 	padding: 0.25em 0.7em;
 	text-decoration: none;
-
-	   -moz-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
 	-webkit-border-radius: 0.3em;
-	        border-radius: 0.3em;
+	border-radius: 0.3em;
 }
 
-.buttons input:hover, .buttons input:focus,
-.buttons a:hover, .buttons a:focus {
+.buttons input:hover, .buttons input:focus, .buttons a:hover, .buttons a:focus
+	{
 	background-color: #999999;
 	color: #ffffff;
 	outline: none;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
-	   -moz-box-shadow: none;
+	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
-	        box-shadow: none;
+	box-shadow: none;
 }
 
 .no-borderradius .buttons input:hover, .no-borderradius .buttons input:focus,
-.no-borderradius .buttons a:hover, .no-borderradius .buttons a:focus {
+	.no-borderradius .buttons a:hover, .no-borderradius .buttons a:focus {
 	background-color: transparent;
 	color: #444444;
 	text-decoration: underline;
@@ -574,7 +585,8 @@ th:hover, tr:hover {
 }
 
 .ie6 .buttons input.delete, .ie6 .buttons input.edit, .ie6 .buttons input.save,
-.ie7 .buttons input.delete, .ie7 .buttons input.edit, .ie7 .buttons input.save {
+	.ie7 .buttons input.delete, .ie7 .buttons input.edit, .ie7 .buttons input.save
+	{
 	padding-left: 36px;
 }
 
@@ -595,105 +607,217 @@ a.skip {
 	left: -9999px;
 }
 
+/* Shared Reference Customization */
+#header {
+	background: #cedce7; /* Old browsers */
+	background: #cedce7; /* Old browsers */
+	background: -moz-linear-gradient(top, #cedce7 0%, #596a72 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cedce7),
+		color-stop(100%, #596a72)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #cedce7 0%, #596a72 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #cedce7 0%, #596a72 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #cedce7 0%, #596a72 100%);
+	/* IE10+ */
+	background: linear-gradient(to bottom, #cedce7 0%, #596a72 100%);
+	/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7',
+		endColorstr='#596a72', GradientType=0); /* IE6-9 */
+	padding: 2em 1em 2em 1em;
+	margin-bottom: 1em;
+}
 
-/* Shared Reference Customization */ 
-#header { 
-background: #cedce7; /* Old browsers */
-background: #cedce7; /* Old browsers */
-background: -moz-linear-gradient(top,  #cedce7 0%, #596a72 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cedce7), color-stop(100%,#596a72)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #cedce7 0%,#596a72 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #cedce7 0%,#596a72 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #cedce7 0%,#596a72 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #cedce7 0%,#596a72 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
-padding: 2em 1em 2em 1em; 
-margin-bottom: 1em; 
-} 
+.fieldcontain {
+	font-size: .9em;
+	width: 100%;
+}
 
-.header-main { 
-  font-size: 90px;
-  font-weight: bold;
-  font-style: italic;
-  font-family: 'Tangerine', cursive;
-  background: -webkit-linear-gradient(#eee, black);
-  -webkit-background-clip: text;
-#  -webkit-text-fill-color: transparent;
-} 
+.header-main {
+	position: relative;
+	left: 30px;
+	font-size: 45px;
+	font-weight: bold;
+	font-style: italic;
+	font-family: 'Tangerine', cursive;
+	background: -webkit-linear-gradient(#eee, black);
+	-webkit-background-clip: text; #
+	-webkit-text-fill-color: transparent;
+	font-size: 45px;
+}
 
-.header-sub { 
- color: #fff; 
- font-size: 1.25em; 
- font-style: italic; 
-} 
+.header-sub {
+	position: relative;
+	left: 30px;
+	top: -20px;
+	color: #fff;
+	font-size: 1em;
+	font-style: italic;
+	color: #fff;
+	top: -20px;
+}
 
-/* Carosel css */
+/* Main Body Content */
+#page-body, #status{
+	position: relative;
+	top: 100px;
+}
+
+/* Carousel css */
 #carousel {
-	width:550px;
-	height:550px;	
-	margin:0 auto;
+	position: relative;
+	width: 800px;
+	height: 850px;
+	left: -20px;
+    margin: 0 auto;
+	width: 800px;
+}
+
+#employee_input, #employer_input, #employeehist_input {
+	position: relative;
+	top: 20%;
+	left: 28%; 
+	border: 1px solid red;
+}
+
+#employee_input {
+	width: 75%;
+}
+
+#employeehist_input, #subEmprForm {
+	margin: 0 auto;
+	width: 450px;
+}
+
+#employer_input {
+	left: 33%;
+	width: 80%;
+}
+
+.fieldcontain textArea {
+	position: relative;
+	width: 200px;
+}
+
+.formcaption {
+	position: relative;
+	top: -20px;
+	font-family: "Arial";
+	font-style: bold;
+	font-size: 40px;
+	margin-bottom: 20px;
+	margin-left: 10%;
+	font-family: "Arial";
+}
+
+.subcaption {
+	position: relative;
+	top: -10px;
+	font-size: .85em;
+	margin-left: 13%;
+	width: 300px;
 }
 
 #slides {
-	overflow:hidden;
+	overflow: hidden;
 	/* fix ie overflow issue */
-	position:relative;
-	width:500px;
-	height:500px;
-	border:1px solid #ccc;
+	position: relative;
+	left: 3%;
+	width: 800px;
+	height: 930px;
+	padding-right: -8%;
+	border: 1px solid #ccc;
 }
 
-/* remove the list styles, width : item width * total items */	
+/* remove the list styles, width : item width * total items */
 #slides ul {
-	position:relative;
-	left:0;
-	top:0;
-	list-style:none;
-	margin:0;
-	padding:0;	
-	width:750px;			
+	position: relative;
+	left: 0;
+	top: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0; #
+	width: 750px;
+	width: 1950px;
 }
 
 /* width of the item, in this case I put 250x250x gif */
 #slides li {
-	width:350px;
-	height:350px;	
-	float:left;
+	width: 600px;
+	height: 350px;
+	float: left;
 }
 
 #slides li img {
-	padding:5px;
+	padding: 400px;
+	width: 450px;
+	height: 450px;
 }
 
 /* Styling for prev and next buttons */
 #buttons {
-	padding:0 0 5px 0;	
-	float:right;
+	position: relative;
+	padding: 0 0 5px 0; #
+	float: right;
+	left: 50%;
 }
 
 #buttons a {
-	display:block; 
-	width:31px; 
-	height:32px;
-	text-indent:-999em;
-	float:left;
-	outline:0;
+	display: block;
+	width: 31px;
+	height: 32px;
+	text-indent: -999em;
+	float: left;
+	outline: 0;
 }
 
 a#prev {
-	background:url(arrow.gif) 0 -31px no-repeat; 
+	background: url(arrow.gif) 0 -31px no-repeat;
 }
 
 a#prev:hover {
-	background:url(arrow.gif) 0 0 no-repeat;
+	background: url(arrow.gif) 0 0 no-repeat;
 }
 
 a#next {
-	background:url(arrow.gif) -32px -31px no-repeat; 
+	background: url(arrow.gif) -32px -31px no-repeat;
 }
 
 a#next:hover {
-	background:url(arrow.gif) -32px 0 no-repeat;
+	background: url(arrow.gif) -32px 0 no-repeat;
 }
 
-.clear {clear:both}
+.clear {
+	clear: both;
+}
+
+.ebutton {
+	position: relative;
+	width: 100%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; /* Opera/IE 8+ */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; margin 20 auto;
+	clear: left;
+}
+
+#employer_input .ebutton {
+	position: relative;
+	top: 30px;
+	left: 35%;
+}
+
+
+#employee_input .ebutton {
+	position: relative;
+	top: 30px;
+	left: 35%;
+}
+
+#employeehist_input .ebutton {
+	position: relative;
+	top: 30px;
+	left: 35%;
+}

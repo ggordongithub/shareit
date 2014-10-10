@@ -41,16 +41,18 @@ $(document).ready(function() {
 		//get the right position            
 		var left_indent = parseInt($('#slides ul').css('left')) + item_width;
 
+
 		//slide the item            
-		$('#slides ul').animate({'left' : left_indent}, 200,function(){    
+		$('#slides ul').animate({'left' : left_indent }, 200,function(){    
+
 
             //move the last item and put it as first item            	
 			$('#slides li:first').before($('#slides li:last'));           
 
 			//set the default item to correct position
 			$('#slides ul').css({'left' : left_value});
-		
-		});
+
+		}).fadeIn(5000);
 
 		//cancel the link behavior            
 		return false;
