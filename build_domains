@@ -6,6 +6,8 @@ array=(
 Interview
 InterviewMethod
 InterviewType
+InterviewState
+Invitation
 Employer
 EmployerLocation
 EmployeeLocation
@@ -15,7 +17,6 @@ State
 Location
 ProspectEmployer
 ShareReference
-InterviewState
 EmployeeReference
 )
 
@@ -24,7 +25,8 @@ for domain in ${array[*]}
 do
    if [ ! -f "$path_test/$domain$suffix" ]; then
          grails create-domain-class $domain
-         grails create-controller $domain
+         grails generate-controller $domain
+         grails generate-views $domain
    fi 
 done
 

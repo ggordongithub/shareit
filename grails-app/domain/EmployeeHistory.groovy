@@ -9,9 +9,9 @@ class EmployeeHistory {
     String weakestSkills
     boolean tardyOften
     String managementStyle
-    String willYouRehire
+    boolean willYouRehire
     String getlongWithCoworkers
-    String getAlongWithMgt
+    boolean getAlongWithMgt
     String jobResponsibilities
     String whyDidEmployeeLeave
     String highIntegrity

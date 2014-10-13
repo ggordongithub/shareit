@@ -1,4 +1,4 @@
 <div id="header">
- 	<p><a class="header-main">Shared Reference(s)</a></p>
+ 	<div class="shareref"></div>
  	<p><a class="header-sub">soar towards your dreams</a></p>
 </div>

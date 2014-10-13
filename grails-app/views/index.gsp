@@ -113,7 +113,7 @@ p {
 		</div>
 
 	</div>
-
+<!--  
 	<a href="#page-body" class="skip"><g:message
 			code="default.link.skip.label" default="Skip to content&hellip;" /></a>
 	<div id="status" role="complementary">
@@ -161,6 +161,7 @@ p {
 			</ul>
 	   </div>
 	   </div>
+	   -->
 	<div class="footer" role="contentinfo">
 		<g:render template="/layouts/footer"></g:render>
 	</div>
