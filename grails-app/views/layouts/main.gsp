@@ -28,6 +28,8 @@
 		-->
 	<g:render template="/layouts/header" />
 	<g:layoutBody />
-
+	<div class="footer" role="contentinfo">
+		<g:render template="/layouts/footer"></g:render>
+	</div>
 </body>
 </html>

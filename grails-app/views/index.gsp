@@ -162,9 +162,6 @@ p {
 	   </div>
 	   </div>
 	   -->
-	<div class="footer" role="contentinfo">
-		<g:render template="/layouts/footer"></g:render>
-	</div>
 	<div id="spinner" class="spinner" style="display: none;">
 		<g:message code="spinner.alt" default="Loading&hellip;" />
 	</div>
