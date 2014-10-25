@@ -41,7 +41,7 @@ body {
 	background: #ffffff;
 	color: #333333;
 	margin: 0 auto;
-	max-width: 960px;
+	max-width: 1200px;
 	overflow-x: hidden;
 	/* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
 	-moz-box-shadow: 0 0 0.3em #255b17;
@@ -109,7 +109,7 @@ img {
 }
 
 #footer {
-		background: rgb(149, 149, 149); /* Old browsers */
+    background: rgb(149, 149, 149); /* Old browsers */
 	background: -moz-linear-gradient(-45deg, rgba(149, 149, 149, 1) 0%,
 		rgba(13, 13, 13, 1) 46%, rgba(1, 1, 1, 1) 50%, rgba(10, 10, 10, 1) 53%,
 		rgba(78, 78, 78, 1) 76%, rgba(56, 56, 56, 1) 87%, rgba(27, 27, 27, 1)
@@ -139,25 +139,27 @@ img {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595',
 		endColorstr='#1b1b1b', GradientType=1);
 
-	padding: 2em 1em 10em 2em;
+	padding: 2em 0 10em 0;
 }
 
 #f1 {
 	position: relative;
 	top: 150px;
 	color: gray;
-	left: 25%;
+	left: 35%;
 	font-size: 1em;
 	font-style: arial;
+	margin: 0 auto;
 }
 
 .footer {
 	font-style: bold;
 	clear: both;
 	margin-top: 1.5em;
-	padding: 1em;
+	#padding: 1em;
 	min-height: 1em;
 	clear: both;
+	left: -20%;
 }
 
 .footer a {
@@ -265,7 +267,7 @@ fieldset, .property-list {
 
 .fieldcontain label, .fieldcontain .property-label {
 	#color: #666666;
-	color: white;
+	color: gray;
 	text-align: right;
 	width: 25%;
 }
@@ -724,15 +726,27 @@ a.skip {
 
 #employeehist_input, #subEmprForm {
 	margin: 0 auto;
-	width: 500px;
-	left: 10%;
+	width: 650px;
 	top: 12%;
 	font-size: 15px;
 }
 
-#employer_input {
-	width: 80%;
+#employeehist_input {
+	position: relative;
+	left: 20%;
 }
+
+#employer_input{
+	position: relative;
+	margin: 0 auto;
+	left: 12%;
+}
+
+#employer_input #subEmprForm {
+	margin: 0 auto;
+	width: 900px;
+}
+
 
 .fieldcontain textArea {
 	position: relative;
@@ -748,6 +762,11 @@ a.skip {
 	margin-bottom: 20px;
 	margin-left: 10%;
 	font-family: "Arial";
+}
+
+#employer_input .formcaption {
+	position: relative;
+	left: 7%;
 }
 
 .subcaption {
@@ -881,7 +900,7 @@ a#next:hover {
 {
 	position: relative;
 	width: 5em;
-	left: -10%;
+	left: -15%;
 	-moz-border-radius: 25px 10px / 10px 25px;
     border-radius: 15px 15px 15px 15px;
     font-size: 25px;
