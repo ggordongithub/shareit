@@ -139,12 +139,12 @@ img {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595',
 		endColorstr='#1b1b1b', GradientType=1);
 
-	padding: 2em 0 10em 0;
+	padding: 2em 0 5em 0;
 }
 
 #f1 {
 	position: relative;
-	top: 150px;
+	top: 50px;
 	color: gray;
 	left: 35%;
 	font-size: 1em;
@@ -156,7 +156,6 @@ img {
 	font-style: bold;
 	clear: both;
 	margin-top: 1.5em;
-	#padding: 1em;
 	min-height: 1em;
 	clear: both;
 	left: -20%;
@@ -705,14 +704,14 @@ a.skip {
 /* Carousel css */
 #carousel {
 	position: relative;
-	width: 800px;
+	width: 1800px;
 	height: 850px;
 	left: -20px;
 	margin: 0 auto;
 	width: 800px;
 }
 
-#employee_input, #employer_input, #employeehist_input {
+#employee_input, #employer_input, #employeeHist_input, #employeeExp_input {
 	position: relative;
 	top: 20%;
 	left: 28%; 
@@ -724,14 +723,14 @@ a.skip {
 	color: white;
 }
 
-#employeehist_input, #subEmprForm {
+#employeeHist_input, #subEmprForm {
 	margin: 0 auto;
 	width: 650px;
 	top: 12%;
 	font-size: 15px;
 }
 
-#employeehist_input {
+#employeeHist_input {
 	position: relative;
 	left: 20%;
 }
@@ -828,7 +827,7 @@ a.skip {
 	margin: 0;
 	padding: 0; #
 	width: 750px;
-	width: 1950px;
+	width: 2950px;
 }
 
 /* width of the item, in this case I put 250x250x gif */
@@ -923,9 +922,43 @@ a#next:hover {
 	left: 35%;
 }
 
-#employeehist_input .ebutton {
+#employeeHist_input .ebutton {
 	position: relative;
 	top: 30px;
 	left: 35%;
 }
+
+#trait{
+	position: relative;
+	left: 5%;
+	padding: .7em;
+}
+
+#empExp label {
+	position: relative;
+	top: 10px;
+	width: 400px;
+	left: -5%;
+	text-align: center;
+	color: white;
+}
+
+#empExp textArea {
+	position: relative;
+	top: 20px;
+	width: 600px;
+	height: 20em;
+	float:left;
+	left: -20%;
+	padding: .5em;
+	rows:"4";
+	cols:"4";
+}
+
+#employeeExp_input .ebutton {
+	position: relative;
+	top: 50px;
+	left: 25%;
+}
+
 

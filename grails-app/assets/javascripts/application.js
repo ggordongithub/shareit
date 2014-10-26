@@ -94,21 +94,33 @@ $(document).ready(function() {
 	 * $('#slides').hover(
 	 * 
 	 * function() { clearInterval(run); }, function() { run =
-	 * setInterval('rotate()', speed); } );
-		console.log("inside of animation method now")
+	 * setInterval('rotate()', speed); } ); console.log("inside of animation
+	 * method now")
 	 */
 
-});
-
-$(document).ready(function() {
-	  $('#img_browse_g').hover(function() {
-		$(this).animate("bounce", { times:5 }, 300);
-		console.log("insdie animation loop")
-	  })
 });
 
 // a simple function to click next link
 // a timer will call this function, and the rotation will begin :)
 function rotate() {
 	$('#next').click();
+}
+
+// limit how many checkboxes are checked
+function chkcontrol(j) {
+	var total = 0;
+
+		console.log(j + document + document.getElementsByName("ckbox").length);
+    var checkBoxElements = document.getElementsByName("ckbox");
+    console.log(checkBoxElements.length)
+	for (var i = 0; i < checkBoxElements.length; i++) {
+		if (checkBoxElements[i].checked) {
+			total = total + 1;
+		}
+		if (total > 3) {
+			alert("Please Select only three")
+			checkBoxElements[j].checked = false;
+			return false;
+		}
+	}
 }

@@ -163,6 +163,8 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/index':                         ['IS_AUTHENTICATED_FULLY'],
 	'/index.gsp':                     ['IS_AUTHENTICATED_FULLY'],
 	'/share.gsp':                     ['IS_AUTHENTICATED_FULLY'],
+	'/**/profile/**':                 ['IS_AUTHENTICATED_FULLY'],
+	'/dbconsole/**':                  ['IS_AUTHENTICATED_FULLY'],
 	'/assets/**':                     ['permitAll'],
 	'/**/js/**':                      ['permitAll'],
 	'/**/css/**':                     ['permitAll'],
@@ -170,5 +172,4 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/images/home/**':             ['permitAll'],
 	'/employ*/**':                    ['permitAll'],
 	'/**/favicon.ico':                ['permitAll'],
-	'/dbconsole/**':                  ['IS_AUTHENTICATED_FULLY']
 ]

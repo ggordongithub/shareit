@@ -9,7 +9,6 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	border: 1px solid red;
 }
 
 #ref_browse, #ref_edit, #ref_share {
@@ -66,10 +65,32 @@
 	border: 2px solid black;
 }
 
+#close p {
+	position: relative;
+	top: -4px;
+	padding: 0.6em;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Arial;
+	font-weight: 900;
+	font-size: .9em;
+	color: black;
+	text-align: center;
+	vertical-align: middle;
+}
+
 #img_browse {
 	position: relative;
 	top: 20%;
 	left: 10%;
+}
+
+#img_browse_g:hover, #img_edit_b:hover, #img_share_g:hover {
+	opacity: 0.5;
+	filter: alpha(opacity = 50);
+	-ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
 }
 
 #img_edit, #img_share {
@@ -82,14 +103,16 @@
 	position: relative;
 	height: 120px;
 	width: 190px;
-	top: 5%;
+	top: 7%;
 	left: 15%;
 }
 
 #img_edit_b {
 	position: relative;
-	top: 3%;
-	left: 18%;
+	top: 7%;
+	left: 12%;
+	height: 110px;
+	width: 190px;
 }
 
 #img_share_g {
@@ -100,12 +123,6 @@
 	left: 18%;
 }
 </style>
-
-<script type="text/javascript"> 
-$('#img_browse_g').hover(function () {
-        console.log("inside of animation method now");
-});
-</script>
 
 <div class="container_share">
 	<ul id="menu">
@@ -119,7 +136,10 @@ $('#img_browse_g').hover(function () {
 					<a href=#><img id="img_browse_g"
 						src="assets/home/glass_image_lt.png"></a>
 				</div>
-				<div id="close"></div>
+				<div id="close">
+					<p>Search professional references from our comprehensive
+						database</p>
+				</div>
 			</div>
 		</li>
 		<li>
@@ -128,10 +148,12 @@ $('#img_browse_g').hover(function () {
 					<a href=#><img id="img_edit" src="assets/home/edit_text_l.png"></a>
 				</div>
 				<div id="body">
-					<a href=#><img id="img_edit_b"
+					<a href="profile"><img id="img_edit_b"
 						src="assets/home/book_and_pen_home_page_v1f.png"></a>
 				</div>
-				<div id="close"></div>
+				<div id="close">
+					<p>Create, update or publish your professional references</p>
+				</div>
 			</div>
 		</li>
 		<li>
@@ -144,7 +166,10 @@ $('#img_browse_g').hover(function () {
 					<a href=#><img id="img_share_g"
 						src="assets/home/globe_image_home_page_v1f.png"></a>
 				</div>
-				<div id="close"></div>
+				<div id="close">
+					<p>Make your verified professional references available to all
+						potential buyers/employers</p>
+				</div>
 			</div>
 		</li>
 	</ul>

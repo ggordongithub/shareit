@@ -2,7 +2,7 @@
 <html>
 <head>
 <!--   meta name="layout" content="main"/ -->
-<meta name="layout" content="share" />
+<meta name="layout" content="share">
 <title>Welcome to Grails</title>
 <style type="text/css" media="screen">
 #status {
