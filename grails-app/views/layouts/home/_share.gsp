@@ -145,7 +145,7 @@
 		<li>
 			<div id="ref_edit">
 				<div id="head">
-					<a href=#><img id="img_edit" src="assets/home/edit_text_l.png"></a>
+					<a href="profile"><img id="img_edit" src="assets/home/edit_text_l.png"></a>
 				</div>
 				<div id="body">
 					<a href="profile"><img id="img_edit_b"
