@@ -131,6 +131,83 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${employeeInstance?.employeeExperiences}">
+				<li class="fieldcontain">
+					<span id="employeeExperiences-label" class="property-label"><g:message code="employee.employeeExperiences.label" default="Employee Experiences" /></span>
+					
+						<g:each in="${employeeInstance.employeeExperiences}" var="e">
+						<span class="property-value" aria-labelledby="employeeExperiences-label"><g:link controller="employeeExperience" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${employeeInstance?.employeeHistories}">
+				<li class="fieldcontain">
+					<span id="employeeHistories-label" class="property-label"><g:message code="employee.employeeHistories.label" default="Employee Histories" /></span>
+					
+						<g:each in="${employeeInstance.employeeHistories}" var="e">
+						<span class="property-value" aria-labelledby="employeeHistories-label"><g:link controller="employeeHistory" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${employeeInstance?.employeeLocations}">
+				<li class="fieldcontain">
+					<span id="employeeLocations-label" class="property-label"><g:message code="employee.employeeLocations.label" default="Employee Locations" /></span>
+					
+						<g:each in="${employeeInstance.employeeLocations}" var="e">
+						<span class="property-value" aria-labelledby="employeeLocations-label"><g:link controller="employeeLocation" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${employeeInstance?.employeeReferences}">
+				<li class="fieldcontain">
+					<span id="employeeReferences-label" class="property-label"><g:message code="employee.employeeReferences.label" default="Employee References" /></span>
+					
+						<g:each in="${employeeInstance.employeeReferences}" var="e">
+						<span class="property-value" aria-labelledby="employeeReferences-label"><g:link controller="employeeReference" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${employeeInstance?.employers}">
+				<li class="fieldcontain">
+					<span id="employers-label" class="property-label"><g:message code="employee.employers.label" default="Employers" /></span>
+					
+						<g:each in="${employeeInstance.employers}" var="e">
+						<span class="property-value" aria-labelledby="employers-label"><g:link controller="employer" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${employeeInstance?.prospectEmployers}">
+				<li class="fieldcontain">
+					<span id="prospectEmployers-label" class="property-label"><g:message code="employee.prospectEmployers.label" default="Prospect Employers" /></span>
+					
+						<g:each in="${employeeInstance.prospectEmployers}" var="p">
+						<span class="property-value" aria-labelledby="prospectEmployers-label"><g:link controller="prospectEmployer" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${employeeInstance?.sharedReferences}">
+				<li class="fieldcontain">
+					<span id="sharedReferences-label" class="property-label"><g:message code="employee.sharedReferences.label" default="Shared References" /></span>
+					
+						<g:each in="${employeeInstance.sharedReferences}" var="s">
+						<span class="property-value" aria-labelledby="sharedReferences-label"><g:link controller="shareReference" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:employeeInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

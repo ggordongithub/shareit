@@ -109,7 +109,7 @@ img {
 }
 
 #footer {
-    background: rgb(149, 149, 149); /* Old browsers */
+	background: rgb(149, 149, 149); /* Old browsers */
 	background: -moz-linear-gradient(-45deg, rgba(149, 149, 149, 1) 0%,
 		rgba(13, 13, 13, 1) 46%, rgba(1, 1, 1, 1) 50%, rgba(10, 10, 10, 1) 53%,
 		rgba(78, 78, 78, 1) 76%, rgba(56, 56, 56, 1) 87%, rgba(27, 27, 27, 1)
@@ -138,7 +138,6 @@ img {
 		100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595',
 		endColorstr='#1b1b1b', GradientType=1);
-
 	padding: 2em 0 5em 0;
 }
 
@@ -264,8 +263,8 @@ fieldset, .property-list {
 	margin-top: 1em;
 }
 
-.fieldcontain label, .fieldcontain .property-label {
-	#color: #666666;
+.fieldcontain label, .fieldcontain .property-label { #
+	color: #666666;
 	color: gray;
 	text-align: right;
 	width: 25%;
@@ -656,7 +655,7 @@ a.skip {
 	margin-bottom: 1em;
 }
 
-.shareref {
+ .shareref  {
 	position: relative;
 	background: url("../images/home/share_references_banner.png");
 	height: 60px;
@@ -711,11 +710,12 @@ a.skip {
 	width: 800px;
 }
 
-#employee_input, #employer_input, #employeeHist_input, #employeeExp_input {
+#employee_input, #employer_input, #employeeHist_input,
+	#employeeExp_input {
 	position: relative;
 	top: 20%;
-	left: 28%; 
-	#border: 1px solid red;
+	left: 28%; #
+	border: 1px solid red;
 }
 
 #employee_input {
@@ -735,7 +735,7 @@ a.skip {
 	left: 20%;
 }
 
-#employer_input{
+#employer_input {
 	position: relative;
 	margin: 0 auto;
 	left: 12%;
@@ -745,7 +745,6 @@ a.skip {
 	margin: 0 auto;
 	width: 900px;
 }
-
 
 .fieldcontain textArea {
 	position: relative;
@@ -806,7 +805,6 @@ a.skip {
 		100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595',
 		endColorstr='#1b1b1b', GradientType=1);
-
 	/* IE6-9 fallback on horizontal gradient */
 	overflow: hidden;
 	/* fix ie overflow issue */
@@ -848,8 +846,8 @@ a.skip {
 /* Styling for prev and next buttons */
 #buttons {
 	position: relative;
-	padding: 5px 0 1px 0; 
-	#float: right;
+	padding: 5px 0 1px 0; #
+	float: right;
 	left: 50%;
 }
 
@@ -895,19 +893,17 @@ a#next:hover {
 	clear: left;
 }
 
-#save
-{
+#save {
 	position: relative;
 	width: 5em;
 	left: -15%;
-	-moz-border-radius: 25px 10px / 10px 25px;
-    border-radius: 15px 15px 15px 15px;
-    font-size: 25px;
+	-moz-border-radius: 25px 10px/10px 25px;
+	border-radius: 15px 15px 15px 15px;
+	font-size: 25px;
 }
 
-#save:hover
-{
-  background-color: gray;
+#save:hover {
+	background-color: gray;
 }
 
 #employer_input .ebutton {
@@ -928,7 +924,7 @@ a#next:hover {
 	left: 35%;
 }
 
-#trait{
+#trait {
 	position: relative;
 	left: 5%;
 	padding: .7em;
@@ -946,13 +942,13 @@ a#next:hover {
 #empExp textArea {
 	position: relative;
 	top: 20px;
-	width: 600px;
+	width: 550px;
 	height: 20em;
-	float:left;
-	left: -20%;
+	float: left;
+	left: -15%;
 	padding: .5em;
-	rows:"4";
-	cols:"4";
+	rows: "4";
+	cols: "4";
 }
 
 #employeeExp_input .ebutton {
@@ -961,4 +957,7 @@ a#next:hover {
 	left: 25%;
 }
 
-
+#employeeExp_input .formcaption {
+	position: relative;
+	left: -7%;
+}

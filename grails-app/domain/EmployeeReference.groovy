@@ -10,6 +10,8 @@ class EmployeeReference {
     Date lastUpdated
     int referenceScore
     String imageLogo
+	
+	static belongsTo = [employee:Employee]
 
     static constraints = {
       name(blank:false)

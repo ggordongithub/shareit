@@ -110,3 +110,129 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: employeeInstance, field: 'employeeExperiences', 'error')} ">
+	<label for="employeeExperiences">
+		<g:message code="employee.employeeExperiences.label" default="Employee Experiences" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${employeeInstance?.employeeExperiences?}" var="e">
+    <li><g:link controller="employeeExperience" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="employeeExperience" action="create" params="['employee.id': employeeInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'employeeExperience.label', default: 'EmployeeExperience')])}</g:link>
+</li>
+</ul>
+
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: employeeInstance, field: 'employeeHistories', 'error')} ">
+	<label for="employeeHistories">
+		<g:message code="employee.employeeHistories.label" default="Employee Histories" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${employeeInstance?.employeeHistories?}" var="e">
+    <li><g:link controller="employeeHistory" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="employeeHistory" action="create" params="['employee.id': employeeInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'employeeHistory.label', default: 'EmployeeHistory')])}</g:link>
+</li>
+</ul>
+
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: employeeInstance, field: 'employeeLocations', 'error')} ">
+	<label for="employeeLocations">
+		<g:message code="employee.employeeLocations.label" default="Employee Locations" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${employeeInstance?.employeeLocations?}" var="e">
+    <li><g:link controller="employeeLocation" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="employeeLocation" action="create" params="['employee.id': employeeInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'employeeLocation.label', default: 'EmployeeLocation')])}</g:link>
+</li>
+</ul>
+
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: employeeInstance, field: 'employeeReferences', 'error')} ">
+	<label for="employeeReferences">
+		<g:message code="employee.employeeReferences.label" default="Employee References" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${employeeInstance?.employeeReferences?}" var="e">
+    <li><g:link controller="employeeReference" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="employeeReference" action="create" params="['employee.id': employeeInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'employeeReference.label', default: 'EmployeeReference')])}</g:link>
+</li>
+</ul>
+
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: employeeInstance, field: 'employers', 'error')} ">
+	<label for="employers">
+		<g:message code="employee.employers.label" default="Employers" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${employeeInstance?.employers?}" var="e">
+    <li><g:link controller="employer" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="employer" action="create" params="['employee.id': employeeInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'employer.label', default: 'Employer')])}</g:link>
+</li>
+</ul>
+
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: employeeInstance, field: 'prospectEmployers', 'error')} ">
+	<label for="prospectEmployers">
+		<g:message code="employee.prospectEmployers.label" default="Prospect Employers" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${employeeInstance?.prospectEmployers?}" var="p">
+    <li><g:link controller="prospectEmployer" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="prospectEmployer" action="create" params="['employee.id': employeeInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'prospectEmployer.label', default: 'ProspectEmployer')])}</g:link>
+</li>
+</ul>
+
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: employeeInstance, field: 'sharedReferences', 'error')} ">
+	<label for="sharedReferences">
+		<g:message code="employee.sharedReferences.label" default="Shared References" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${employeeInstance?.sharedReferences?}" var="s">
+    <li><g:link controller="shareReference" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="shareReference" action="create" params="['employee.id': employeeInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'shareReference.label', default: 'ShareReference')])}</g:link>
+</li>
+</ul>
+
+
+</div>
+

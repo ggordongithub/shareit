@@ -16,6 +16,10 @@ class Employer {
     String employerReferenceLastName
     String employerReferenceMiddleName
 
+	//ToDo: many to many relationship needs to be setup here between employer and employee
+	static belongsTo = [employee:Employee]
+	static hasMany = [employerLocations:EmployerLocation]
+
     static constraints = {
        employerName(blank:true)
        employerQuestions(blank:true)

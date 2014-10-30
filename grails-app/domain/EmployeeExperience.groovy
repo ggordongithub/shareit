@@ -11,6 +11,8 @@ class EmployeeExperience {
 	Boolean businessMinded
 	Boolean inventive
 	Boolean resultOriented
+	
+	static belongsTo = [employee:Employee]
 
 	static constraints = {
 		yearsKnown(inList: ["0-2 yrs", "3-5 yrs", "6-8 yrs", "9-11 yrs", "12-14 yrs", "15 plus yrs"])

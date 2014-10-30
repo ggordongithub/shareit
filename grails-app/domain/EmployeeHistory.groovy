@@ -15,6 +15,8 @@ class EmployeeHistory {
     String jobResponsibilities
     String whyDidEmployeeLeave
     String highIntegrity
+	
+	static belongsTo = [employee:Employee]
 
     static constraints = {
       promotionInCompany(blank:false)

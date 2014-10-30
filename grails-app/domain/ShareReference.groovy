@@ -4,14 +4,15 @@ import groovy.transform.EqualsAndHashCode
 @ToString(includeNames = true, includeFields = true)
 @EqualsAndHashCode
 class ShareReference {
-      String rating
-      String referenceCategory
-      int referenceAge
+	String rating
+	String referenceCategory
+	int referenceAge
 
-    static constraints = {
-      rating(blank:true)
-      referenceCategory(blank:true)
-      referenceAge(blank:true)
-    }
+	static belongsTo = [employee:Employee]
 
+	static constraints = {
+		rating(blank:true)
+		referenceCategory(blank:true)
+		referenceAge(blank:true)
+	}
 }

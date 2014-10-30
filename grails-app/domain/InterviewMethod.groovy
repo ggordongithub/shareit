@@ -6,6 +6,8 @@ import groovy.transform.EqualsAndHashCode
 class InterviewMethod {
 //Fields must be lower case wow
     String methodName
+	
+	static belongTo = [interview:Interview]
 
     static constraints = {
       methodName(blank:true)

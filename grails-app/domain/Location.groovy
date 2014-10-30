@@ -5,7 +5,9 @@ class Location {
     String state
     String zip
     String country
-
+	EmployeeLocation employeeLocation
+	EmployerLocation employerLocation
+	
     static constraints = {
       address(blank:false)
       city(blank:false)
