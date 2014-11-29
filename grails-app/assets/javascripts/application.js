@@ -38,7 +38,8 @@ $(document).ready(function() {
 	});
 
 	// if user clicked on prev button
-	$('#prev').click(function() {
+//	$('#prev').click(function() {
+	$('#left_button').click(function() {
 
 		// get the right position
 		var left_indent = parseInt($('#slides ul').css('left')) + item_width;
@@ -64,7 +65,8 @@ $(document).ready(function() {
 	});
 
 	// if user clicked on next button
-	$('#next').click(function() {
+//	$('#next').click(function() {
+	$('#right_button').click(function() {
 
 		// get the right position
 		var left_indent = parseInt($('#slides ul').css('left')) - item_width;
@@ -102,15 +104,18 @@ $(document).ready(function() {
 
 // a simple function to click next link
 // a timer will call this function, and the rotation will begin :)
+/*
 function rotate() {
 	$('#next').click();
 }
+*/
 
 // limit how many checkboxes are checked
 function chkcontrol(j) {
 	var total = 0;
 
-		console.log(j + document + document.getElementsByName("ckbox").length);
+	console.log(j + document + document.getElementsByName("ckbox").length);
+
     var checkBoxElements = document.getElementsByName("ckbox");
     console.log(checkBoxElements.length)
 	for (var i = 0; i < checkBoxElements.length; i++) {
@@ -118,9 +123,11 @@ function chkcontrol(j) {
 			total = total + 1;
 		}
 		if (total > 3) {
-			alert("Please Select only three")
+			alert("Please select only three");
 			checkBoxElements[j].checked = false;
 			return false;
 		}
 	}
 }
+
+

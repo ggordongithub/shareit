@@ -2,39 +2,35 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'promotionInCompany', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'promotionInCompany', 'error')}">
 	<label for="promotionInCompany">
 		<g:message code="employeeHistory.promotionInCompany.label" default="Promotion In Company" />
-		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="promotionInCompany" required="" value="${employeeHistoryInstance?.promotionInCompany}"/>
+	<g:checkBox name="promotionInCompany" value="${employeeHistoryInstance?.promotionInCompany}"/>
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'conflict', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'conflict', 'error')}">
 	<label for="conflict">
 		<g:message code="employeeHistory.conflict.label" default="Conflict" />
-		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="conflict" required="" value="${employeeHistoryInstance?.conflict}"/>
+	<g:checkBox name="conflict" value="${employeeHistoryInstance?.conflict}"/>
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'teamPlayer', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'teamPlayer', 'error')}">
 	<label for="teamPlayer">
 		<g:message code="employeeHistory.teamPlayer.label" default="Team Player" />
-		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="teamPlayer" required="" value="${employeeHistoryInstance?.teamPlayer}"/>
+	<g:checkBox name="teamPlayer" value="${employeeHistoryInstance?.teamPlayer}"/>
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'handlePressure', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'handlePressure', 'error')}">
 	<label for="handlePressure">
 		<g:message code="employeeHistory.handlePressure.label" default="Handle Pressure" />
-		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="handlePressure" required="" value="${employeeHistoryInstance?.handlePressure}"/>
+	<g:checkBox name="handlePressure" value="${employeeHistoryInstance?.handlePressure}"/>
 
 </div>
 
@@ -47,12 +43,11 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'alert', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'alert', 'error')} ">
 	<label for="alert">
 		<g:message code="employeeHistory.alert.label" default="Alert" />
-		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="alert" required="" value="${employeeHistoryInstance?.alert}"/>
+	<g:checkBox name="alert" value="${employeeHistoryInstance?.alert}"/>
 
 </div>
 
@@ -83,39 +78,35 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'managementStyle', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'managementStyle', 'error')}">
 	<label for="managementStyle">
 		<g:message code="employeeHistory.managementStyle.label" default="Management Style" />
-		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="managementStyle" required="" value="${employeeHistoryInstance?.managementStyle}"/>
+	<g:textField name="managementStyle" value="${employeeHistoryInstance?.managementStyle}"/>
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'willYouRehire', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'willYouRehire', 'error')}">
 	<label for="willYouRehire">
 		<g:message code="employeeHistory.willYouRehire.label" default="Will You Rehire" />
-		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="willYouRehire" required="" value="${employeeHistoryInstance?.willYouRehire}"/>
+	<g:checkBox name="willYouRehire" value="${employeeHistoryInstance?.willYouRehire}"/>
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'getlongWithCoworkers', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'getlongWithCoworkers', 'error')} ">
 	<label for="getlongWithCoworkers">
 		<g:message code="employeeHistory.getlongWithCoworkers.label" default="Getlong With Coworkers" />
-		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="getlongWithCoworkers" required="" value="${employeeHistoryInstance?.getlongWithCoworkers}"/>
+	<g:textField name="getlongWithCoworkers" value="${employeeHistoryInstance?.getlongWithCoworkers}"/>
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'getAlongWithMgt', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'getAlongWithMgt', 'error')} ">
 	<label for="getAlongWithMgt">
 		<g:message code="employeeHistory.getAlongWithMgt.label" default="Get Along With Mgt" />
-		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="getAlongWithMgt" required="" value="${employeeHistoryInstance?.getAlongWithMgt}"/>
+	<g:textField name="getAlongWithMgt" value="${employeeHistoryInstance?.getAlongWithMgt}"/>
 
 </div>
 
@@ -128,21 +119,19 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'whyDidEmployeeLeave', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'whyDidEmployeeLeave', 'error')} ">
 	<label for="whyDidEmployeeLeave">
 		<g:message code="employeeHistory.whyDidEmployeeLeave.label" default="Why Did Employee Leave" />
-		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="whyDidEmployeeLeave" required="" value="${employeeHistoryInstance?.whyDidEmployeeLeave}"/>
+	<g:textField name="whyDidEmployeeLeave" value="${employeeHistoryInstance?.whyDidEmployeeLeave}"/>
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'highIntegrity', 'error')} required">
+<div class="fieldcontain ${hasErrors(bean: employeeHistoryInstance, field: 'highIntegrity', 'error')} ">
 	<label for="highIntegrity">
 		<g:message code="employeeHistory.highIntegrity.label" default="High Integrity" />
-		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="highIntegrity" required="" value="${employeeHistoryInstance?.highIntegrity}"/>
+	<g:checkBox name="highIntegrity" value="${employeeHistoryInstance?.highIntegrity}"/>
 
 </div>
 

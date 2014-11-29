@@ -119,6 +119,6 @@
 </div>
 
 	<p class="ebutton">
-		<g:submitButton name="save" />
+	<g:submitButton class="btn btn-primary btn-lg" name="SAVE"></g:submitButton>
 	</p>
 </g:form>

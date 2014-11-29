@@ -1,4 +1,9 @@
 <style type="text/css" media="screen">
+
+body {
+  margin: 0 auto;
+}
+
 .container_share {
 	position: relative;
 	background-color: white;
@@ -61,7 +66,7 @@
 
 .container_share #close {
 	width: 100%;
-	height: 92px;
+	height: 96px;
 	border: 2px solid black;
 }
 

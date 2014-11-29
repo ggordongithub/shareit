@@ -131,6 +131,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${employeeExperienceInstance?.employee}">
+				<li class="fieldcontain">
+					<span id="employee-label" class="property-label"><g:message code="employeeExperience.employee.label" default="Employee" /></span>
+					
+						<span class="property-value" aria-labelledby="employee-label"><g:link controller="employee" action="show" id="${employeeExperienceInstance?.employee?.id}">${employeeExperienceInstance?.employee?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:employeeExperienceInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

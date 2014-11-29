@@ -173,8 +173,8 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/employ*/**':                    ['IS_AUTHENTICATED_FULLY'],
 	'/intervi*/**':                   ['IS_AUTHENTICATED_FULLY'],
 	'/invit*/**':                     ['IS_AUTHENTICATED_FULLY'],
-	'/loca*/**':                      ['IS_AUTHENTICATED_FULLY'],
-	'/sharereferencec*/**':           ['IS_AUTHENTICATED_FULLY'],
+	'/*location*/**':                 ['IS_AUTHENTICATED_FULLY'],
+	'/*reference*/**':                ['IS_AUTHENTICATED_FULLY'],
 	'/stat*/**':                      ['IS_AUTHENTICATED_FULLY'],
 	'/**/favicon.ico':                ['permitAll'],
 ]

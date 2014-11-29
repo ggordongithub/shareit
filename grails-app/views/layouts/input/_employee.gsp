@@ -137,7 +137,8 @@
 			value="${employeeInstance?.resumeCurrent}" />
 
 	</div>
+
 	<p class="ebutton">
-		<g:submitButton name="save" />
+		<g:submitButton class="btn btn-primary btn-lg store" name="SAVE"></g:submitButton>
 	</p>
 </g:form>

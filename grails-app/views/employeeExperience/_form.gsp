@@ -1,7 +1,7 @@
 
 
 
-
+<div id="trait_r1">
 <div class="fieldcontain ${hasErrors(bean: employeeExperienceInstance, field: 'yearsKnown', 'error')} required">
 	<label for="yearsKnown">
 		<g:message code="employeeExperience.yearsKnown.label" default="Years Known" />
@@ -28,7 +28,9 @@
 	<g:checkBox name="clever" value="${employeeExperienceInstance?.clever}" />
 
 </div>
+</div>
 
+<div id="trait_r2">
 <div class="fieldcontain ${hasErrors(bean: employeeExperienceInstance, field: 'smart', 'error')} ">
 	<label for="smart">
 		<g:message code="employeeExperience.smart.label" default="Smart" />
@@ -56,6 +58,8 @@
 
 </div>
 
+</div>
+<div id="trait_r3">
 <div class="fieldcontain ${hasErrors(bean: employeeExperienceInstance, field: 'wellSpokenOf', 'error')} ">
 	<label for="wellSpokenOf">
 		<g:message code="employeeExperience.wellSpokenOf.label" default="Well Spoken Of" />
@@ -82,7 +86,9 @@
 	<g:checkBox name="entrepreneurial" value="${employeeExperienceInstance?.entrepreneurial}" />
 
 </div>
+</div>
 
+<div id="trait_r4">
 <div class="fieldcontain ${hasErrors(bean: employeeExperienceInstance, field: 'businessMinded', 'error')} ">
 	<label for="businessMinded">
 		<g:message code="employeeExperience.businessMinded.label" default="Business Minded" />
@@ -107,6 +113,16 @@
 		
 	</label>
 	<g:checkBox name="resultOriented" value="${employeeExperienceInstance?.resultOriented}" />
+
+</div>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: employeeExperienceInstance, field: 'employee', 'error')} required">
+	<label for="employee">
+		<g:message code="employeeExperience.employee.label" default="Employee" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="employee" name="employee.id" from="${Employee.list()}" optionKey="id" required="" value="${employeeExperienceInstance?.employee?.id}" class="many-to-one"/>
 
 </div>
 
