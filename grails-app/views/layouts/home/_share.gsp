@@ -173,7 +173,7 @@ body {
 				</div>
 				<div id="close">
 					<p>Make your verified professional references available to all
-						potential buyers/employers</p>
+						potential clients/employers</p>
 				</div>
 			</div>
 		</li>

@@ -43,6 +43,16 @@ grails.controllers.defaultScope = 'singleton'
 
 // GSP settings
 grails {
+	mail {
+		host = "smtp.gmail.com"
+		port = 465
+		username = "geraldgordon4@gmail.com"
+		password = "myGod4life"
+		props = ["mail.smtp.auth":"true",
+				 "mail.smtp.socketFactory.port":"465",
+				 "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+				 "mail.smtp.socketFactory.fallback":"false"]
+	}
     views {
         gsp {
             encoding = 'UTF-8'
@@ -164,8 +174,11 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/index.gsp':                     ['IS_AUTHENTICATED_FULLY'],
 	'/share.gsp':                     ['IS_AUTHENTICATED_FULLY'],
 	'/**/profile/**':                 ['IS_AUTHENTICATED_FULLY'],
+	'/springSecurityUI/**':           ['IS_AUTHENTICATED_FULLY'],
 	'/dbconsole/**':                  ['IS_AUTHENTICATED_FULLY'],
 	'/assets/**':                     ['permitAll'],
+	'/register/**':                   ['permitAll'],
+	'/plugins/**':                    ['permitAll'],
 	'/**/js/**':                      ['permitAll'],
 	'/**/css/**':                     ['permitAll'],
 	'/**/images/**':                  ['permitAll'],
