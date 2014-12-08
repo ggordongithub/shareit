@@ -64,6 +64,10 @@ the explicit tags above and edit those, not the taglib code.
 	position: relative;
 	width: 220px;
 }
+
+body {
+margin: 0 auto;
+}
 </style>
 
 </head>

@@ -36,7 +36,7 @@
 #f2 {
 	position: relative;
 	top: 30%;
-	left: 30%;
+	left: 25%;
 	width: 110%;
 	color: gray;
 	margin: 0 auto;

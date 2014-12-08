@@ -8,7 +8,7 @@ class EmployeeReference {
     Date dateCreated
     Date expiredDate
     Date lastUpdated
-    int referenceScore
+    int referenceScore = 1;
     String imageLogo
 	
 	static belongsTo = [employee:Employee]
@@ -23,7 +23,7 @@ class EmployeeReference {
       dateCreated(blank:false)
       expiredDate(blank:false)
       lastUpdated(blank:false)
-      referenceScore(blank:false)
+      referenceScore(blank:true)
       imageLogo(blank:true)
     }
 }

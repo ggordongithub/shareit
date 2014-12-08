@@ -65,7 +65,8 @@ body {
 }
 
 a:link, a:visited, a:hover {
-	color: #48802c;
+#	color: #48802c;
+	color: gray;
 }
 
 a:hover, a:active {
@@ -711,10 +712,16 @@ a.skip {
 }
 
 #employee_input, #employer_input, #employeeHist_input,
-	#employeeExp_input {
+	#employeeExp_input, #employeeRef_input {
 	position: relative;
 	top: 20%;
 	left: 28%; 
+}
+
+#employeeRef_input {
+	position: relative;
+	top: 18%;
+	left: 10%;
 }
 
 #employee_input {
@@ -742,7 +749,7 @@ a.skip {
 
 input[type="text"], #sirName, #suffixName, #experience, #strongestSkills, #whyDidEmployeeLeave, #jobResponsibilities, #weakestSkills,
 #confirmStartDate_day, #confirmStartDate_month, #confirmStartDate_year,#confirmEndDate_day, #confirmEndDate_month, #confirmEndDate_year,
-#employerQuestions, #yearsKnown {
+#employerQuestions, #yearsKnown, #expiredDate_day, #expiredDate_month, #expiredDate_year {
 
 	color: gray;
 }
@@ -761,6 +768,7 @@ input[type="text"], #sirName, #suffixName, #experience, #strongestSkills, #whyDi
 
 .formcaption {
 	position: relative;
+	width: 80%;
 	top: -10px;
 	font-family: "Arial";
 	font-style: bold;
@@ -768,12 +776,28 @@ input[type="text"], #sirName, #suffixName, #experience, #strongestSkills, #whyDi
 	margin-bottom: 10px;
 	margin-left: 10%;
 	font-family: "Arial";
+	border: 3px solid white;
+	text-align: center;
+	padding: 5px;
 }
 
 #employer_input .formcaption {
 	position: relative;
-	left: 7%;
+	top: -30px;
+	left: -7%;
 }
+
+#employeeRef_input .formcaption {
+	position: relative;
+	left: -4%;
+	top: -28px;
+}
+
+#employeeHist_input .formcaption {
+	position: relative;
+	left: -18%;
+}
+
 
 .subcaption {
 	position: relative;
@@ -941,6 +965,13 @@ a#next:hover  {
 	left: -43%;
 }
 
+#employeeRef_input #save {
+	position: relative;
+	top: 25px;
+	left: 12%;
+	
+}
+
 
 
 #employer_input .ebutton {
@@ -999,7 +1030,8 @@ a#next:hover  {
 
 #employeeExp_input .formcaption {
 	position: relative;
-	left: -7%;
+	top: -39px;
+	left: -23%;
 }
 
 
@@ -1021,14 +1053,14 @@ a#next:hover  {
 #left_button {
     position: fixed;
     top: 35%;	
-    left: 23%;
+    left: 27%;
     width: 200px;
 }
 
 #right_button {
     position: fixed;
-    top: 36%;	
-    left: 73%;
+    top: 35%;	
+    left: 69%;
     width: 200px;
 }
 

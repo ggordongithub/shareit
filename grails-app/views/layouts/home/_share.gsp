@@ -72,7 +72,7 @@ body {
 
 #close p {
 	position: relative;
-	top: -4px;
+	top: 6px;
 	padding: 0.6em;
 	margin-left: auto;
 	margin-right: auto;

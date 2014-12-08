@@ -109,11 +109,11 @@ body {
 
 		<div id="slides">
 			<ul>
-				<li>
-					<div id="employee_input">
-						<g:render template="/layouts/input/employee"></g:render>
-					</div>
-				</li>
+<%--				<li>--%>
+<%--					<div id="employee_input">--%>
+<%--						<g:render template="/layouts/input/employee"></g:render>--%>
+<%--					</div>--%>
+<%--				</li>--%>
 				<li>
 					<div id="employer_input">
 						<g:render template="/layouts/input/employer"></g:render>
@@ -127,6 +127,11 @@ body {
 				<li>
 					<div id="employeeExp_input">
 						<g:render template="/layouts/input/employeeExp"></g:render>
+					</div>
+				</li>
+				<li>
+					<div id="employeeRef_input">
+						<g:render template="/layouts/input/employeeRef"></g:render>
 					</div>
 				</li>
 			</ul>
