@@ -102,7 +102,7 @@
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: employeeReferenceInstance, field: 'employee', 'error')} required">
-	<label for="employee">
+	<label for="employee" class="many-to-one">
 		<g:message code="employeeReference.employee.label" default="Employee" />
 		<span class="required-indicator">*</span>
 	</label>

@@ -29,6 +29,9 @@
 		<div id="grailsLogo" role="banner"><a href="http://grails.org"><asset:image src="grails_logo.png" alt="Grails"/></a></div>
 		-->
 	<g:render template="/layouts/home/header" />
+	<g:if test="${flash.message}">
+				<div class="message" role="status">${flash.message}</div>
+			</g:if>
 	<g:render template="/layouts/home/share" />
 	<div class="footer" role="contentinfo">
 		<g:render template="/layouts/home/footer"></g:render>

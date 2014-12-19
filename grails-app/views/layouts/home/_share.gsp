@@ -157,7 +157,7 @@ body {
 						src="assets/home/book_and_pen_home_page_v1f.png"></a>
 				</div>
 				<div id="close">
-					<p>Create, update or publish your professional references</p>
+					<p>Create, update or request references from professionals in your network</p>
 				</div>
 			</div>
 		</li>

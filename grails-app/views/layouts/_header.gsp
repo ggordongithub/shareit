@@ -1,6 +1,6 @@
 <%@ page import="grails.util.Holders" %>
 <%@ page import="grails.plugin.springsecurity.SpringSecurityUtils" %>
-<div id="header">
+<div id="header" style="padding: 0; margin: 0;">
 <%--<form name="submitForm" method="POST"--%>
 <%--		action="${createLink(controller: 'logout')}">--%>
 <%--		<input type="hidden" name="" value=""> <a--%>
@@ -10,7 +10,7 @@
 	<span id='s2ui_login_link_container'>
 
 				<nobr>
-				<div id='loginLinkContainer' style="font-style:italic; position:relative; color:black; left:82%; text-decoration:none;">
+				<div id='loginLinkContainer' style="font-style:italic; position:relative; color:black; left:77%; text-decoration:none;">
 				<sec:ifLoggedIn>
 				Logged in as <sec:username/> (<g:link controller='logout'><span style="color:white;">Logout</span></g:link>)
 				</sec:ifLoggedIn>
@@ -27,6 +27,6 @@
 				</nobr>
 
 	</span>
- 	<div class="shareref"></div>
+ 	<div class="shareref" style="padding: 0; margin:0;"></div>
  	<p><a href="${resource(dir:'/')}" style="color:black; text-decoration:none;" class="header-sub">soar towards your dreams</a></p>
 </div>

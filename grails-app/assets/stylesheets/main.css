@@ -652,7 +652,7 @@ a.skip {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e',
 		endColorstr='#7d7e7d', GradientType=1);
 	/* IE6-9 fallback on horizontal gradient */
-	padding: 2em 1em 2em 1em;
+	padding: .1em; 
 	margin-bottom: 1em;
 }
 
@@ -661,7 +661,8 @@ a.skip {
 	background: url("../images/home/share_references_banner.png") no-repeat;
 	height: 80px;
 	width: 470px;
-	padding: 0.5em;
+	padding: 1em;
+	left: 5%;
 	right: 0;
 	top: 0;
 	text-indent: -9999px;
@@ -678,7 +679,7 @@ a.skip {
 	font-size: 45px;
 	font-weight: bold;
 	font-style: italic;
-	font-family: 'Tangerine', cursive;
+	font-family: 'Florence, cursive';
 	background: -webkit-linear-gradient(#eee, black);
 	-webkit-background-clip: text; #
 	-webkit-text-fill-color: transparent;
@@ -690,8 +691,9 @@ a.skip {
 	left: 150px;
 	top: -20px;
 	color: #000;
-	font-size: 1em;
+	font-size: 1.1em;
 	font-style: italic;
+	font-family: 'Florence, cursive';
 	top: -20px;
 }
 
@@ -727,6 +729,7 @@ a.skip {
 #employee_input {
 	width: 75%;
 	color: white;
+	left: 125%;
 }
 
 #employeeHist_input, #subEmprForm {
@@ -770,12 +773,12 @@ input[type="text"], #sirName, #suffixName, #experience, #strongestSkills, #whyDi
 	position: relative;
 	width: 80%;
 	top: -10px;
-	font-family: "Arial";
+	font-family: ;
 	font-style: bold;
 	font-size: 40px;
 	margin-bottom: 10px;
 	margin-left: 10%;
-	font-family: "Arial";
+	font-family: 'Florence, cursive';
 	border: 3px solid white;
 	text-align: center;
 	padding: 5px;
@@ -943,7 +946,7 @@ a#next:hover  {
 
 #employee_input #save {
 	position: relative;
-	top: 70px;
+	#top: 70px;
 	left: -49%;
 }
 
@@ -1034,6 +1037,12 @@ a#next:hover  {
 	left: -23%;
 }
 
+#employee_input .formcaption {
+	position: relative;
+	top: -30px;
+	left: -5%;
+}
+
 
 *[id*=''tr_r'] checkBox {
 	left: 60px;
@@ -1053,14 +1062,14 @@ a#next:hover  {
 #left_button {
     position: fixed;
     top: 35%;	
-    left: 27%;
+    left: 23%;
     width: 200px;
 }
 
 #right_button {
     position: fixed;
     top: 35%;	
-    left: 69%;
+    left: 72%;
     width: 200px;
 }
 
@@ -1098,4 +1107,7 @@ a#next:hover  {
   -webkit-font-smoothing: antialiased;
 }	
 
+.many-to-one{
+	display:none;
+}
 

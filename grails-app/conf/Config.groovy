@@ -169,17 +169,19 @@ grails.plugin.springsecurity.userLookup.userDomainClassName = 'SecUser'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'SecUserSecRole'
 grails.plugin.springsecurity.authority.className = 'SecRole'
 grails.plugin.springsecurity.logout.postOnly = 'true'
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/employeeProfile'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/':                              ['IS_AUTHENTICATED_FULLY'],
 	'/index':                         ['IS_AUTHENTICATED_FULLY'],
 	'/index.gsp':                     ['IS_AUTHENTICATED_FULLY'],
 	'/share.gsp':                     ['IS_AUTHENTICATED_FULLY'],
 	'/**/profile/**':                 ['IS_AUTHENTICATED_FULLY'],
+	'/employeeProfile/**':            ['IS_AUTHENTICATED_FULLY'],
 	'/springSecurityUI/**':           ['IS_AUTHENTICATED_FULLY'],
 	'/persistentLogin/*':             ['IS_AUTHENTICATED_FULLY'],
 	'/sec*/*':                        ['IS_AUTHENTICATED_FULLY'],
 	'/user/*':                        ['IS_AUTHENTICATED_FULLY'],
-	'/role/*':                        ['IS_AUTHENTICATED_FULLY'],
+	'/role/**':                       ['IS_AUTHENTICATED_FULLY'],
 	'/regist*/*':                     ['IS_AUTHENTICATED_FULLY'],
 	'/dbconsole/**':                  ['IS_AUTHENTICATED_FULLY'],
 	'/assets/**':                     ['permitAll'],
