@@ -1,3 +1,3 @@
 shareit
 =======
--- prototype of new tool producted by Progenitor Enterprisies
+-- prototype of new tool producted by Progenitor Export Import Company --
