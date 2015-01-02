@@ -134,7 +134,7 @@ body {
 		<li>
 			<div id="ref_browse">
 				<div id="head">
-					<a href=#><img id="img_browse"
+					<a href="request"><img id="img_browse"
 						src="assets/home/browser_text_l.png"></a>
 				</div>
 				<div id="body">
@@ -143,7 +143,7 @@ body {
 				</div>
 				<div id="close">
 					<p>Search professional references from our comprehensive
-						database</p>
+						database, and request professional references.</p>
 				</div>
 			</div>
 		</li>
@@ -164,7 +164,7 @@ body {
 		<li>
 			<div id="ref_share">
 				<div id="head">
-					<a href=#><img id="img_share"
+					<a href="share"><img id="img_share"
 						src="assets/home/share_text_l.png"></a>
 				</div>
 				<div id="body">

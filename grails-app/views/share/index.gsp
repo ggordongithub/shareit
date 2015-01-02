@@ -69,8 +69,8 @@
                       }
                    });
 				   //jAlert("Are you sure you want to send your reference to: " + email_value + " ?");
-				   $("#s_button_" + btn_name).css("background", "green", "color", "white");
-				   $("#s_button_" + btn_name).css("color", "white");
+				   //$("#s_button_" + btn_name).css("background", "green", "color", "white");
+				   //$("#s_button_" + btn_name).css("color", "white");
 				   $("#s_button_" + btn_name).text("Resend Shared Reference");
 				   //$("#s_button_" + btn_name).addClass("btn btn-primary btn-lg");
 				   $("#email_input_" + btn_name).val("");
