@@ -1,16 +1,20 @@
 <div id="header">
-	<%--	<form name="submitForm" method="POST"--%>
-	<%--		action="${createLink(controller: 'logout')}">--%>
-	<%--		<input type="hidden" name="" value=""> <a--%>
-	<%--			style="font-style:italic; position:relative; color:black; left:95%; text-decoration:none;" href="javascript:document.submitForm.submit()">logout</a>--%>
-	<%--	</form>--%>
+
+	<%--	<g:link controller='logout'>--%>
+	<%--			<span style="color: white;">Logout</span>--%>
+	<%--	</g:link>--%>
 	<div id='loginLinkContainer'
 		style="font-style: italic; position: relative; color: black; left: 82%; text-decoration: none;">
 		<span id='s2ui_login_link_container'> <nobr>
 				<sec:ifLoggedIn>
-				Logged in as <sec:username /> (<g:link controller='logout'>
-						<span style="color: white;">Logout</span>
-					</g:link>)
+					<form name="submitForm" method="POST"
+						action="${createLink(controller: 'logout')}">
+						<input type="hidden" name="" value=""> Logged in as
+						<sec:username />
+						<a id="myLogOut"
+							style="font-style: italic; position: relative; color: white; text-decoration: none;"
+							href="javascript:document.submitForm.submit()">&nbsp (logout)</a>
+					</form>
 				</sec:ifLoggedIn>
 				<sec:ifNotLoggedIn>
 					<a href='#' id='loginLink' style="color: white;">Login</a>

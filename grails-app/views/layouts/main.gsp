@@ -19,7 +19,9 @@
 	href="${assetPath(src: 'apple-touch-icon-retina.png')}">
 <asset:stylesheet src="application.css" />
 <asset:stylesheet src="css/main.css" />
+<asset:stylesheet src="jquery.alerts.css" />
 <asset:javascript src="application.js" />
+<asset:javascript src="jquery.alerts.js" />
 <g:layoutHead />
 </head>
 <body>

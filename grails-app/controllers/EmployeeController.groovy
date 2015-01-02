@@ -9,12 +9,12 @@ class EmployeeController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 	
 
-//    def index(Integer max) {
-    def index() {
-       // params.max = Math.min(max ?: 10, 100)
+   // def index() {
+    def index(Integer max) {
+        params.max = Math.min(max ?: 10, 100)
 		if (Employee.count() > 0 ) {
-            //respond Employee.list(params), model:[employeeInstanceCount: Employee.count()]
-			render view: "../index"
+            respond Employee.list(params), model:[employeeInstanceCount: Employee.count()]
+			//render view: "../index"
 		}
 		else {
             render view: "/employeeProfile"
