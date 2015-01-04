@@ -17,9 +17,15 @@ td {
 	vertical-align: middle;
 }
 
-table, H2 {
+table {
 	margin: 0 auto;
 	max-width: 95%;
+	padding: 15px;
+}
+
+#info {
+	font-size: 1.5em;
+	text-align: center;
 	padding: 15px;
 }
 </style>
@@ -37,10 +43,10 @@ table, H2 {
 		</ul>
 	</div>
 	<div id="list-share" class="content scaffold-list" role="main">
-		<H2>
+		<div id="info">
 			<%--			<g:message code="default.list.label" args="[entityName]" />--%>
 			update [Email To] field and send your reference to clients/employers
-		</H2>
+		</div>
 		<g:if test="${flash.message}">
 			<div class="message" role="status">
 				${flash.message}

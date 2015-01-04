@@ -136,6 +136,11 @@ H1 {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-align: center;
+	text-shadow: 2px 2px 0px white;
+}
+
+H1 a:hover {
+ color: gray;
 }
 
 #toptxt {

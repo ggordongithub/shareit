@@ -18,11 +18,16 @@ td {
 	vertical-align: middle;
 }
 
-table, H2 {
+table {
 	margin: 0 auto;
 	max-width: 95%;
 	padding: 15px;
+}
+
+#info {
+	font-size: 1.5em;
 	text-align: center;
+	padding: 15px;
 }
 </style>
 </head>
@@ -33,17 +38,17 @@ table, H2 {
 		<ul>
 			<li><a class="home" href="${createLink(uri: '/')}"><g:message
 						code="default.home.label" /></a></li>
-			<li><g:link class="create" action="create">
-					<g:message code="default.new.label" args="[entityName]" />
-				</g:link></li>
+<%--			<li><g:link class="create" action="create">--%>
+<%--					<g:message code="default.new.label" args="[entityName]" />--%>
+<%--				</g:link></li>--%>
 		</ul>
 	</div>
 	<div id="list-request" class="content scaffold-list" role="main">
-		<H2>
+		<div id="info">
 			<%--			<g:message code="default.list.label" args="[entityName]" />--%>
 			Update Request for Reference Email and Company Name Fields to send a reference request
-			to clients/employers
-		</H2>
+			to clients/employers/supporters
+		</div>
 		<g:if test="${flash.message}">
 			<div class="message" role="status">
 				${flash.message}
