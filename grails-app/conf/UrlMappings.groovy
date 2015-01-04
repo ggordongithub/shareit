@@ -13,6 +13,7 @@ class UrlMappings {
         "/logout/$action?"(controller:"logout")
 		name userProfile: "/profile"(view:"profile")
 		name employeeProfile: "/employeeProfile"(view:"employeeProfile")
+		name operate: "/operate"(view:"share/operate")
         //"/"(controller:"/employee")
 	}
 }

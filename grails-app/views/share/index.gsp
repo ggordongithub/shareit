@@ -7,6 +7,22 @@
 <g:set var="entityName"
 	value="${message(code: 'share.label', default: 'Share')}" />
 <title><g:message code="default.list.label" args="[entityName]" /></title>
+<style type="text/css" media="screen">
+body {
+	margin: 0 auto;
+}
+
+td {
+	height: 7em;
+	vertical-align: middle;
+}
+
+table, H2 {
+	margin: 0 auto;
+	max-width: 95%;
+	padding: 15px;
+}
+</style>
 </head>
 <body>
 	<a href="#list-share" class="skip" tabindex="-1"><g:message
@@ -21,9 +37,10 @@
 		</ul>
 	</div>
 	<div id="list-share" class="content scaffold-list" role="main">
-		<h1>
-			<g:message code="default.list.label" args="[entityName]" />
-		</h1>
+		<H2>
+			<%--			<g:message code="default.list.label" args="[entityName]" />--%>
+			update [Email To] field and send your reference to clients/employers
+		</H2>
 		<g:if test="${flash.message}">
 			<div class="message" role="status">
 				${flash.message}
@@ -66,12 +83,14 @@
                              jAlert("Ok Reference Request Email Sent To: " + email_value );
                       } else {
                             jAlert("Ok Email Request Cancelled" );
+                             //reloads page when cancelled is pressed, this resets buttons
+                             location.reload();
                       }
                    });
 				   //jAlert("Are you sure you want to send your reference to: " + email_value + " ?");
 				   //$("#s_button_" + btn_name).css("background", "green", "color", "white");
 				   //$("#s_button_" + btn_name).css("color", "white");
-				   $("#s_button_" + btn_name).text("Resend Shared Reference");
+				   $("#s_button_" + btn_name).text("Send New Request");
 				   //$("#s_button_" + btn_name).addClass("btn btn-primary btn-lg");
 				   $("#email_input_" + btn_name).val("");
 				}
@@ -92,7 +111,7 @@
 
 						<%-- <td>${fieldValue(bean: shareInstance, field: "emailTo")}</td>--%>
 						<td><input id="email_input_${i}" type="text"
-							style="font-size: 12px; height: 20px; width: 170px;"
+							style="font-size: 12px; height: 30px; width: 170px;"
 							value="ex: ceo_john@google.hr.com" onclick="this.value = ''" /></td>
 						<td>
 							${fieldValue(bean: shareInstance, field: "referenceCompleted")}
@@ -101,9 +120,10 @@
 						<td><g:formatBoolean
 								boolean="${shareInstance.deactivateReference}" /></td>
 
-						<td><button type="button" class="btn btn-primary btn-lg" id="s_button_${i}"
-								onclick="updateButtonName(${i})"
-								style="height: 50px; width: 130px; font-size:14px;">Share Reference</button></td>
+						<td><button type="button" class="btn btn-primary btn-lg"
+								id="s_button_${i}" onclick="updateButtonName(${i})"
+								style="height: 50px; width: 160px; font-size: 14px;">Share
+								Reference</button></td>
 
 					</tr>
 				</g:each>

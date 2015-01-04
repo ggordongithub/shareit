@@ -87,7 +87,7 @@ margin: 0 auto;
 <s2ui:showFlash/>
 
 	<div class="footer" role="contentinfo">
-		<g:render template="/layouts/home/footer"></g:render>
+		<g:render template="/layouts/footer"></g:render>
 	</div>
 
 </body>

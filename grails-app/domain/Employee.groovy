@@ -16,6 +16,9 @@ class Employee {
 	String employeeTitle
 	int salaryRange
 	boolean resumeCurrent
+	byte[] photo;
+	String photoName;
+	String photoContentType;
 
 	static hasMany = [employeeLocations:EmployeeLocation, employeeHistories:EmployeeHistory,
 		sharedReferences:ShareReference, employers:Employer, prospectEmployers:ProspectEmployer, 
@@ -49,5 +52,9 @@ class Employee {
 		homePhone(nullable: true)
 		salaryRange(blank:true)
 		resumeCurrent(blank:true)
+//	    photo(nullable:true, blank:true, maxSize:1024 * 1024 * 2048); //2GB 
+	    photo(nullable:true, blank:true);  
+	    photoName(nullable:true, blank:true); 
+		photoContentType(nullable:true, blank:true); 
 	}
 }

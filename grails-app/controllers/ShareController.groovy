@@ -16,6 +16,10 @@ class ShareController {
     def show(Share shareInstance) {
         respond shareInstance
     }
+	
+	def operate() {
+		respond view:'operate'
+	}
 
     def create() {
         respond new Share(params)

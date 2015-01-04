@@ -1,5 +1,6 @@
 <div class="formcaption">Employee Profile</div>
-<div class="subcaption">We need to build your profile, please fill out the form questions to complete your profile</div>
+<div class="subcaption">We need to build your profile, please fill
+	out the form questions to complete your profile</div>
 <g:if test="${flash.message}">
 	<div class="message" role="status">
 		${flash.message}
@@ -15,8 +16,7 @@
 	</ul>
 </g:hasErrors>
 
-<g:form name='subEmpForm'
-	url="[resource:'employee', action:'save']">
+<g:form name='subEmpForm' url="[resource:'employee', action:'save']">
 
 	<div
 		class="fieldcontain ${hasErrors(bean: employeeInstance, field: 'employeeTitle', 'error')} required">
@@ -31,7 +31,7 @@
 	<div
 		class="fieldcontain ${hasErrors(bean: employeeInstance, field: 'sirName', 'error')} required">
 		<label for="sirName"> <g:message code="employee.sirName.label"
-				default="Sir Name" /> 
+				default="Sir Name" />
 		</label>
 		<g:select name="sirName"
 			from="${['NA', 'Mr.', 'Ms.', 'Mrs.', 'Sr.', 'Miss.']}" required=""
@@ -76,7 +76,7 @@
 	<div
 		class="fieldcontain ${hasErrors(bean: employeeInstance, field: 'suffixName', 'error')} required">
 		<label for="suffixName"> <g:message
-				code="employee.suffixName.label" default="Suffix Name" /> 
+				code="employee.suffixName.label" default="Suffix Name" />
 		</label>
 		<g:select name="suffixName"
 			from="${['NA', 'I', 'II', 'III', 'IV', 'V', 'VI']}" required=""
@@ -135,6 +135,18 @@
 		</label>
 		<g:checkBox name="resumeCurrent"
 			value="${employeeInstance?.resumeCurrent}" />
+
+	</div>
+
+	<div
+		class="fieldcontain ${hasErrors(bean: employeeInstance, field: 'photo', 'error')} ">
+		<label for="employeePhoto"> <g:message
+				code="employee.photo.label" default="Upload Reference Photo" />
+		</label>
+
+		<g:uploadForm class="form-employee">
+			<g:field name="employeePhoto" type="file" accept="image/*" />
+		</g:uploadForm>
 
 	</div>
 

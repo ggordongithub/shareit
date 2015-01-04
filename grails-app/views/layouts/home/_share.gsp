@@ -1,7 +1,6 @@
 <style type="text/css" media="screen">
-
 body {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .container_share {
@@ -72,7 +71,7 @@ body {
 
 #close p {
 	position: relative;
-	top: 6px;
+	top: 1px;
 	padding: 0.6em;
 	margin-left: auto;
 	margin-right: auto;
@@ -94,8 +93,8 @@ body {
 	opacity: 0.5;
 	filter: alpha(opacity = 50);
 	-ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
+	-webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+	transform: rotate(7deg);
 }
 
 #img_edit, #img_share {
@@ -127,6 +126,21 @@ body {
 	top: 3%;
 	left: 18%;
 }
+
+H1 {
+	font-size: 45px;
+	font-weight: bold;
+	font-style: italic;
+	font-family: "lucinda";
+	background: -webkit-linear-gradient(black, #505050 );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
+}
+
+#toptxt {
+	text-decoration: none;
+}
 </style>
 
 <div class="container_share">
@@ -134,41 +148,43 @@ body {
 		<li>
 			<div id="ref_browse">
 				<div id="head">
-					<a href="request"><img id="img_browse"
-						src="assets/home/browser_text_l.png"></a>
+					<H1><a id="toptxt" href="request">REQUEST</a></H1>
+					<%--					<a href="request"><img id="img_browse"--%>
+					<%--						src="assets/home/browser_text_l.png"></a>--%>
 				</div>
 				<div id="body">
-					<a href=#><img id="img_browse_g"
+					<a href="request"><img id="img_browse_g"
 						src="assets/home/glass_image_lt.png"></a>
 				</div>
 				<div id="close">
-					<p>Search professional references from our comprehensive
-						database, and request professional references.</p>
+					<p>Request professional/personal references from
+						clients, supporters or employers.
 				</div>
 			</div>
 		</li>
 		<li>
 			<div id="ref_edit">
 				<div id="head">
-					<a href="profile"><img id="img_edit" src="assets/home/edit_text_l.png"></a>
+					<H1><a id="toptxt" href="share/operate">SETTINGS</a></H1>
 				</div>
 				<div id="body">
-					<a href="profile"><img id="img_edit_b"
+					<a href="share/operate"><img id="img_edit_b"
 						src="assets/home/book_and_pen_home_page_v1f.png"></a>
 				</div>
 				<div id="close">
-					<p>Create, update or request references from professionals in your network</p>
+					<p>Create, update and personalize your references salutations. Upload photos, manual references and check out your profile analytics.</p>
 				</div>
 			</div>
 		</li>
 		<li>
 			<div id="ref_share">
 				<div id="head">
-					<a href="share"><img id="img_share"
-						src="assets/home/share_text_l.png"></a>
+					<H1><a id="toptxt" href="share">SHARE</a></H1>
+<%--					<img id="img_share"--%>
+<%--						src="assets/home/share_text_l.png"></a>--%>
 				</div>
 				<div id="body">
-					<a href=#><img id="img_share_g"
+					<a href="share"><img id="img_share_g"
 						src="assets/home/globe_image_home_page_v1f.png"></a>
 				</div>
 				<div id="close">
