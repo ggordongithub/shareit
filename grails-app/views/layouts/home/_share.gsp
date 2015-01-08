@@ -55,6 +55,8 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6d6d6',
 		endColorstr='#28343b', GradientType=1);
 	/* IE6-9 fallback on horizontal gradient */
+
+//    background: white;
 }
 
 .container_share #body {
@@ -132,20 +134,21 @@ H1 {
 	font-weight: bold;
 	font-style: italic;
 	font-family: "lucinda";
-	background: -webkit-linear-gradient(black, #505050 );
+	background: -webkit-linear-gradient(white, #505050 );
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-align: center;
-	text-shadow: 2px 2px 0px white;
+	//text-shadow: 2px 2px 0px ;
+    z-index:9999;
 }
 
-H1 a:hover {
- color: gray;
+#toptxt:hover {
+	background: -webkit-linear-gradient(black, #505050 );
+	-webkit-background-clip: text;
+	//-webkit-text-fill-color: transparent;
+   text-decoration: none;
 }
 
-#toptxt {
-	text-decoration: none;
-}
 </style>
 
 <div class="container_share">
