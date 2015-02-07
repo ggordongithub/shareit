@@ -37,9 +37,10 @@ body {
                       return; 
                   }
         });
-				   var salutation_address = "Dear [Your Reference Author Name Inserted Here],"; 
-			       var salutation_message = "\rI am looking to assemble a strong set of recommendations would you feel comfortable" +
-		                                     " providing me a highly positive reference."; 
+
+		var salutation_address = "Dear [Your Reference Author Name Inserted Here],"; 
+	    var salutation_message = "\rI am looking to assemble a strong set of recommendations would you feel comfortable" +
+		                         " providing me a highly positive reference."; 
 
 		var body = "If you are able " 
 		+ "to attest to my qualifications for employment and the skills I "  
@@ -62,7 +63,6 @@ body {
 
 		$("#begin").val(salutation_address + "\n" + salutation_message); 
 		$("#middle").val(body);
-
 		$("#end").val(end); 
 
 	}
@@ -76,12 +76,23 @@ body {
                       return; 
                   }
         });
-				   var salutation_address = "Dear [Your Reference Author Name Inserted Here],"; 
-			       var salutation_message = "\rI am looking to assemble a strong set of recommendations would you feel comfortable" +
-		                                     " providing me a highly positive reference."; 
+		var salutation_address = "Dear [Company/Customer/Client],"; 
+		var salutation_message = "\rThank you for giving me the opportunity to [interview/meet with] your company, [Company Name].";
+		     
+		var body = "For your convenience, I compiled a list of references "
+		           + "that you can access from my personal reference database by clicking on the link below."
+                   + "\r\rReference Database access for [your name here]: shared references link" 
+                   + "\r\rPlease let me know if there is any information I can provide you regarding "
+                   + "my experience to assist you in giving me an opportunity to work for you."
 
+		var	end = "Thank you very much for your consideration."
+		           + "\r\rSincerely," 
+		           + "\r\r[Your Name Inserted Here] ";
+		                                     
+		$("#begin2").val(salutation_address + "\n" + salutation_message); 
+		$("#middle2").val(body);
+		$("#end2").val(end); 
 	}	
-
 	</g:javascript>
 </head>
 
@@ -203,7 +214,7 @@ body {
 					<button type="button"
 						style="position: relative; margin: 2% 2% 2% 37%;"
 						class="btn btn-primary btn-lg store" name="set_default"
-						onclick="pop()">SET DEFAULT EMAIL</button>
+						onclick="pop2()">SET DEFAULT EMAIL</button>
 				</p>
 
 				<div
@@ -211,8 +222,8 @@ body {
 					<label for="begin"> <g:message code="shareForm.begin.label"
 							default="Enter Salutation" /> <span class="required-indicator">*</span>
 					</label>
-					<g:textArea style="width:500px; height:200px;" name="begin"
-						id="begin" required="" value="${shareFormInstance?.begin}" />
+					<g:textArea style="width:500px; height:200px;" name="begin2"
+						id="begin2" required="" value="${shareFormInstance?.begin}" />
 
 				</div>
 
@@ -222,8 +233,8 @@ body {
 							code="shareForm.middle.label" default="Enter Share Body" /> <span
 						class="required-indicator">*</span>
 					</label>
-					<g:textArea style="width:500px; height:300px;" name="middle"
-						id="middle" required="" value="${shareFormInstance?.middle}" />
+					<g:textArea style="width:500px; height:300px;" name="middle2"
+						id="middle2" required="" value="${shareFormInstance?.middle}" />
 
 				</div>
 
@@ -232,7 +243,7 @@ body {
 					<label for="end"> <g:message code="shareForm.end.label"
 							default="Enter Closing" /> <span class="required-indicator">*</span>
 					</label>
-					<g:textArea style="width:500px; height:200px;" name="end" id="end"
+					<g:textArea style="width:500px; height:200px;" name="end2" id="end2"
 						required="" value="${shareFormInstance?.end}" />
 
 				</div>
