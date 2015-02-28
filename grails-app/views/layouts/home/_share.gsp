@@ -130,22 +130,20 @@ body {
 }
 
 H1 {
-	font-size: 45px;
+	font-size: 35px;
 	font-weight: bold;
 	font-style: italic;
-	font-family: "lucinda";
-	background: -webkit-linear-gradient(white, #505050 );
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	font-family: "Arial";
 	text-align: center;
-	//text-shadow: 2px 2px 0px ;
     z-index:9999;
 }
 
+#toptxt {
+	color: black;
+	}
+
 #toptxt:hover {
-	background: -webkit-linear-gradient(black, #505050 );
-	-webkit-background-clip: text;
-	//-webkit-text-fill-color: transparent;
+	color: white;
    text-decoration: none;
 }
 

@@ -63,10 +63,12 @@ h1 {
 			</a>
 			</div>
 			<div class="col-md-4">
+			<a href="../modifyEmail" id="title_box">
 				<div id="title">
 					<h1>Modify Email</h1>
 					<div id="inner_box">Modify your email salutation for shared references requested/delivered to prospective clients/employers</div>
 				</div>
+			</a>
 			</div>
 			<div class="col-md-4">
 				<div id="title">

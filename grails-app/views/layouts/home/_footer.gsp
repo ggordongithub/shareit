@@ -36,8 +36,8 @@
 #f2 {
 	position: relative;
 	top: 30%;
-	left: 25%;
 	width: 110%;
+	text-align: center;
 	color: gray;
 	margin: 0 auto;
 	clear: both;
@@ -65,6 +65,6 @@
 			<li><a href=#>Modify/Edit references</a></li>
 			<li><a href=#>Share your references</a></li>
 		</ul>
-	    <div id="f2">Progenitor Export Import Co. | &copy 2014 | askus@progenitorimports.com</div>
+	    <div id="f2">Progenitor Export Import Co. | &copy 2015 | askus@progenitorimports.com</div>
 	</div>
 </div>

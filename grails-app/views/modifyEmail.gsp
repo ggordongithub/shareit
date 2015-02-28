@@ -17,6 +17,12 @@ body {
 	margin-bottom: 12px;
 	margin-left: 12px;
 }
+
+h1 {
+ position:relative;
+ top: -15px;
+ left: 25%;
+}
 </style>
 <g:javascript>
 
@@ -128,10 +134,10 @@ body {
 			<g:form method="post" name='requestEmailForm'
 				url="[resource:'requestForm', action:'save']">
 
-				<div id="requestForm">Request Email Form</div>
+				<h1></br>Request Email Form</h1>
 				<p class="ebutton">
 					<button type="button"
-						style="position: relative; margin: 2% 2% 2% 37%;"
+						style="position: relative; margin: 2% 2% 2% 25%;"
 						class="btn btn-primary btn-lg store" name="set_default"
 						onclick="pop()">SET DEFAULT EMAIL</button>
 				</p>
@@ -209,10 +215,10 @@ body {
 			<g:form name='shareEmailForm'
 				url="[resource:'shareForm', action:'update']">
 
-				<div id="shareForm">Share Email Form</div>
+				<h1></br>Share Email Form</h1>
 				<p class="ebutton">
 					<button type="button"
-						style="position: relative; margin: 2% 2% 2% 37%;"
+						style="position: relative; margin: 2% 2% 2% 25%;"
 						class="btn btn-primary btn-lg store" name="set_default"
 						onclick="pop2()">SET DEFAULT EMAIL</button>
 				</p>
