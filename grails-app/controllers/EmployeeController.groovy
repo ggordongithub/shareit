@@ -26,18 +26,19 @@ class EmployeeController {
     }
 	
 	def storeImage () {
-			def imageMap = [:];
-			def imageContentType = parameters.componentImageImageForm?.getContentType();
+			def imageMap = [:]
+			def imageContentType = parameters.componentImageImageForm?.getContentType()
 			if (imageContentType == null || !(imageContentType =~ "image/")) {
-				imageMap.put("photo", null);
-				imageMap.put("photoName", null);
-				imageMap.put("photoContentType", null);
+				imageMap.put("photo", null)
+				imageMap.put("photoName", null)
+				imageMap.put("photoContentType", null)
                 flash.message = 'your profile was saved with the no image was option' 
 			} else {
-				imageMap.put("photo", parameters.componentImageImageForm?.getBytes());
-				imageMap.put("photoName", parameters.componentImageImageForm?.getOriginalFilename());
-				imageMap.put("photoContentType", parameters.componentImageImageForm?.getContentType());
-                flash.message = 'your profile was saved with the following photo [' +  parameters.componentImageImageForm?.getOriginalFilename() + ']';
+				imageMap.put("photo", parameters.componentImageImageForm?.getBytes())
+				imageMap.put("photoName", parameters.componentImageImageForm?.getOriginalFilename())
+				imageMap.put("photoContentType", parameters.componentImageImageForm?.getContentType())
+                flash.message = 'your profile was saved with the following photo [' +  parameters.componentImageImageForm?.getOriginalFilename() + ']'
+				log.info 'Started building image field'
 			}
 			
 			imageMap
@@ -46,7 +47,7 @@ class EmployeeController {
     def create() {
         respond new Employee(params)
     }
-	
+
 	def getImage(Long id) {
 		def employee = Employee.get(id);
 		if (employee != null) {
@@ -75,19 +76,19 @@ class EmployeeController {
         }
 
 		//update properties with storeImage
-		employeeInstance.properties = storeImage
-        employeeInstance.save flush:true
+	//	employeeInstance.properties = storeImage
+     //   employeeInstance.save flush:true
 	
         //flash.message = 'your profile was saved' 
 		render view: '/'
 
-//        request.withFormat {
-//            form multipartForm {
-//                flash.message = message(code: 'default.created.message', args: [message(code: 'employee.label', default: 'Employee'), employeeInstance.id])
-//                redirect employeeInstance
-//            }
-//            '*' { respond employeeInstance, [status: CREATED] }
-//        }
+        request.withFormat {
+            form multipartForm {
+                flash.message = message(code: 'default.created.message', args: [message(code: 'employee.label', default: 'Employee'), employeeInstance.id])
+                redirect employeeInstance
+            }
+            '*' { respond employeeInstance, [status: CREATED] }
+        }
     }
 
     def edit(Employee employeeInstance) {

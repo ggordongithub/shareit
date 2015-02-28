@@ -24,6 +24,8 @@ class Employee {
 		sharedReferences:ShareReference, employers:Employer, prospectEmployers:ProspectEmployer, 
 		employeeExperiences:EmployeeExperience, employeeReferences:EmployeeReference]
 	
+	static hasOne = [requestForm:RequestForm, shareForm:ShareForm]
+	
 	static constraints = {
 		employeeTitle(blank: false)
 		sirName(inList: [

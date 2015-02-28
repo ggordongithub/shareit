@@ -127,7 +127,7 @@ log4j.main = {
            'net.sf.ehcache.hibernate'
 
    // trace 'org.codehaus.groovy.grails.plugins.springsecurity' , 'org.springframework.security'
-    trace 'org.codehaus.groovy.grails.web.pages'          // GSP
+   // trace 'org.codehaus.groovy.grails.web.pages'          // GSP
 
     root {
         trace 'stdout'
@@ -177,16 +177,18 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/share.gsp':                     ['IS_AUTHENTICATED_FULLY'],
 	'/**/profile/**':                 ['IS_AUTHENTICATED_FULLY'],
 	'/**/eeprofile/**':               ['IS_AUTHENTICATED_FULLY'],
+	'/**/modifyEmail/**':             ['IS_AUTHENTICATED_FULLY'],
 	'/employeeProfile/**':            ['IS_AUTHENTICATED_FULLY'],
 	'/springSecurityUI/**':           ['IS_AUTHENTICATED_FULLY'],
 	'/persistentLogin/*':             ['IS_AUTHENTICATED_FULLY'],
 	'/sec*/*':                        ['IS_AUTHENTICATED_FULLY'],
 	'/user/*':                        ['IS_AUTHENTICATED_FULLY'],
-	'/request/*':                     ['IS_AUTHENTICATED_FULLY'],
+	'/request*/*':                    ['IS_AUTHENTICATED_FULLY'],
 	'/operate/*':                     ['IS_AUTHENTICATED_FULLY'],
 	'/share/*':                       ['IS_AUTHENTICATED_FULLY'],
 	'/role/**':                       ['IS_AUTHENTICATED_FULLY'],
 	'/regist*/*':                     ['IS_AUTHENTICATED_FULLY'],
+	'/fileShare/**':                  ['IS_AUTHENTICATED_FULLY'],
 	'/dbconsole/**':                  ['IS_AUTHENTICATED_FULLY'],
 	'/assets/**':                     ['permitAll'],
 	'/register/**':                   ['permitAll'],

@@ -14,6 +14,7 @@ class UrlMappings {
 		name userProfile: "/profile"(view:"profile")
 		name employeeProfile: "/employeeProfile"(view:"employeeProfile")
 		name operate: "/operate"(view:"share/operate")
+		name modifyEmail: "/modifyEmail"(view:"modifyEmail")
         //"/"(controller:"/employee")
 	}
 }
