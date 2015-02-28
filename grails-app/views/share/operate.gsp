@@ -71,6 +71,7 @@ h1 {
 			</a>
 			</div>
 			<div class="col-md-4">
+			<a href="../fileShare/create" id="title_box">
 				<div id="title">
 					<h1>Smile</h1>
 					<div id="inner_box">Upload a professional headshot or selfie. Adding a photo to your profile will help your references request/delivered be more personable, so smile.</div>
